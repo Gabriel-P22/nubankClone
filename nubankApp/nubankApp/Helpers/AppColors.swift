@@ -9,7 +9,11 @@ import Foundation
 import UIKit
 
 public class AppColors: UIColor {
-    var instanciate = AppColors()
+    static var instanciate = AppColors()
     
-    var white: UIColor = .white
+    let white: UIColor = .white
+    let red: UIColor = .red
+    let mainPurple: UIColor = UIColor(red: 0.47, green: 0.04, blue: 0.65, alpha: 1.00)
+    let secondPurple: UIColor = UIColor(red: 0.66, green: 0.35, blue: 0.84, alpha: 1.00)
+    let transparent: UIColor = .clear
 }

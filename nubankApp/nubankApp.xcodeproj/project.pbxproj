@@ -14,6 +14,8 @@
 		486FE4F2290C8FF100215F8F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4F1290C8FF100215F8F /* LoginViewController.swift */; };
 		486FE4F4290C90A300215F8F /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4F3290C90A300215F8F /* Preview.swift */; };
 		486FE4F6290C917600215F8F /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4F5290C917600215F8F /* AppColors.swift */; };
+		486FE4F8290C924A00215F8F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4F7290C924A00215F8F /* LoginView.swift */; };
+		486FE4FC290C948200215F8F /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4FB290C948200215F8F /* MainButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		486FE4F1290C8FF100215F8F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		486FE4F3290C90A300215F8F /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		486FE4F5290C917600215F8F /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		486FE4F7290C924A00215F8F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		486FE4FB290C948200215F8F /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +62,12 @@
 		486FE4D6290C8D5800215F8F /* nubankApp */ = {
 			isa = PBXGroup;
 			children = (
+				486FE4F9290C939700215F8F /* Assets */,
 				486FE4EF290C8DF400215F8F /* DI */,
 				486FE4EE290C8DEC00215F8F /* Modules */,
 				486FE4ED290C8DE200215F8F /* SplashScreen */,
 				486FE4EC290C8DDC00215F8F /* Helpers */,
 				486FE4EB290C8DCB00215F8F /* Common */,
-				486FE4E0290C8D5A00215F8F /* Assets.xcassets */,
 				486FE4E5290C8D5A00215F8F /* Info.plist */,
 			);
 			path = nubankApp;
@@ -98,6 +102,7 @@
 		486FE4EE290C8DEC00215F8F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				486FE4FA290C945900215F8F /* Components */,
 				486FE4F0290C8FD700215F8F /* Login */,
 			);
 			path = Modules;
@@ -114,8 +119,25 @@
 			isa = PBXGroup;
 			children = (
 				486FE4F1290C8FF100215F8F /* LoginViewController.swift */,
+				486FE4F7290C924A00215F8F /* LoginView.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		486FE4F9290C939700215F8F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				486FE4E0290C8D5A00215F8F /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		486FE4FA290C945900215F8F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				486FE4FB290C948200215F8F /* MainButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,8 +210,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				486FE4F8290C924A00215F8F /* LoginView.swift in Sources */,
 				486FE4F2290C8FF100215F8F /* LoginViewController.swift in Sources */,
 				486FE4D8290C8D5800215F8F /* AppDelegate.swift in Sources */,
+				486FE4FC290C948200215F8F /* MainButton.swift in Sources */,
 				486FE4F4290C90A300215F8F /* Preview.swift in Sources */,
 				486FE4F6290C917600215F8F /* AppColors.swift in Sources */,
 				486FE4DA290C8D5800215F8F /* SceneDelegate.swift in Sources */,
