@@ -10,6 +10,6 @@ import UIKit
 
 class LoginViewController: UIViewController {
     override func viewDidLoad() {
-        view.backgroundColor = .white
+        view.backgroundColor = AppColors().instanciate.white
     }
 }
