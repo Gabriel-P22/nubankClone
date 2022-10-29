@@ -19,6 +19,7 @@
 		486FE4FC290C948200215F8F /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4FB290C948200215F8F /* MainButton.swift */; };
 		486FE500290CA2B000215F8F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4FF290CA2B000215F8F /* Coordinator.swift */; };
 		486FE502290CA2BB00215F8F /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE501290CA2BB00215F8F /* MainCoordinator.swift */; };
+		486FE504290CAA0F00215F8F /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE503290CAA0F00215F8F /* AppContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		486FE4FB290C948200215F8F /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 		486FE4FF290CA2B000215F8F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		486FE501290CA2BB00215F8F /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		486FE503290CAA0F00215F8F /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 		78C5BA58C1E1F61DC9CA0AA8 /* Pods-nubankApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nubankApp.release.xcconfig"; path = "Target Support Files/Pods-nubankApp/Pods-nubankApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +133,7 @@
 		486FE4EF290C8DF400215F8F /* DI */ = {
 			isa = PBXGroup;
 			children = (
+				486FE503290CAA0F00215F8F /* AppContainer.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -183,7 +186,6 @@
 				3C77AE95A017098D23A80D21 /* Pods-nubankApp.debug.xcconfig */,
 				78C5BA58C1E1F61DC9CA0AA8 /* Pods-nubankApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -308,6 +310,7 @@
 				486FE4FC290C948200215F8F /* MainButton.swift in Sources */,
 				486FE4F4290C90A300215F8F /* Preview.swift in Sources */,
 				486FE4F6290C917600215F8F /* AppColors.swift in Sources */,
+				486FE504290CAA0F00215F8F /* AppContainer.swift in Sources */,
 				486FE502290CA2BB00215F8F /* MainCoordinator.swift in Sources */,
 				486FE4DA290C8D5800215F8F /* SceneDelegate.swift in Sources */,
 			);
