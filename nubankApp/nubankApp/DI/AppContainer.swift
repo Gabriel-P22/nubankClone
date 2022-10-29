@@ -11,6 +11,7 @@ import Swinject
 class AppConainter {
     public static let shared: Container = {
         let container = Container()
+        container.register(LoginViewModelProtocol.self) { _ in LoginViewModel() }
         return container
     }()
 }

@@ -20,6 +20,7 @@
 		486FE500290CA2B000215F8F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4FF290CA2B000215F8F /* Coordinator.swift */; };
 		486FE502290CA2BB00215F8F /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE501290CA2BB00215F8F /* MainCoordinator.swift */; };
 		486FE504290CAA0F00215F8F /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE503290CAA0F00215F8F /* AppContainer.swift */; };
+		486FE506290CAA9E00215F8F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE505290CAA9E00215F8F /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		486FE4FF290CA2B000215F8F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		486FE501290CA2BB00215F8F /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		486FE503290CAA0F00215F8F /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		486FE505290CAA9E00215F8F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		78C5BA58C1E1F61DC9CA0AA8 /* Pods-nubankApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nubankApp.release.xcconfig"; path = "Target Support Files/Pods-nubankApp/Pods-nubankApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +145,7 @@
 			children = (
 				486FE4F1290C8FF100215F8F /* LoginViewController.swift */,
 				486FE4F7290C924A00215F8F /* LoginView.swift */,
+				486FE505290CAA9E00215F8F /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 			files = (
 				486FE500290CA2B000215F8F /* Coordinator.swift in Sources */,
 				486FE4F8290C924A00215F8F /* LoginView.swift in Sources */,
+				486FE506290CAA9E00215F8F /* LoginViewModel.swift in Sources */,
 				486FE4F2290C8FF100215F8F /* LoginViewController.swift in Sources */,
 				486FE4D8290C8D5800215F8F /* AppDelegate.swift in Sources */,
 				486FE4FC290C948200215F8F /* MainButton.swift in Sources */,

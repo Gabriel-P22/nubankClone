@@ -65,11 +65,3 @@ class LoginView: UIView {
     }
     
 }
-
-struct LoginViewControllerPreview: PreviewProvider {
-    static var previews: some View {
-        Preview {
-            LoginViewController()
-        }
-    }
-}

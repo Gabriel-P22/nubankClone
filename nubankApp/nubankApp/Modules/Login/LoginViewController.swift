@@ -10,7 +10,7 @@ import UIKit
 
 class LoginViewController: UIViewController, Coordinating {
     var coordinator: Coordinator?
-    
+    var viewModel: LoginViewModelProtocol?
     
     let customView: LoginView = LoginView()
     
