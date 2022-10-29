@@ -8,7 +8,9 @@
 import Foundation
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, Coordinating {
+    var coordinator: Coordinator?
+    
     
     let customView: LoginView = LoginView()
     

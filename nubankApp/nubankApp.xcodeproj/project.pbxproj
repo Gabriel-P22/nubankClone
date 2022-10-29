@@ -16,6 +16,8 @@
 		486FE4F6290C917600215F8F /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4F5290C917600215F8F /* AppColors.swift */; };
 		486FE4F8290C924A00215F8F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4F7290C924A00215F8F /* LoginView.swift */; };
 		486FE4FC290C948200215F8F /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4FB290C948200215F8F /* MainButton.swift */; };
+		486FE500290CA2B000215F8F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4FF290CA2B000215F8F /* Coordinator.swift */; };
+		486FE502290CA2BB00215F8F /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE501290CA2BB00215F8F /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		486FE4F5290C917600215F8F /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		486FE4F7290C924A00215F8F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		486FE4FB290C948200215F8F /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		486FE4FF290CA2B000215F8F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		486FE501290CA2BB00215F8F /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		486FE4D6290C8D5800215F8F /* nubankApp */ = {
 			isa = PBXGroup;
 			children = (
+				486FE4FD290CA26C00215F8F /* Infrastructure */,
 				486FE4F9290C939700215F8F /* Assets */,
 				486FE4EF290C8DF400215F8F /* DI */,
 				486FE4EE290C8DEC00215F8F /* Modules */,
@@ -140,6 +145,23 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		486FE4FD290CA26C00215F8F /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				486FE4FE290CA29B00215F8F /* Coordinator */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		486FE4FE290CA29B00215F8F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				486FE4FF290CA2B000215F8F /* Coordinator.swift */,
+				486FE501290CA2BB00215F8F /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -210,12 +232,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				486FE500290CA2B000215F8F /* Coordinator.swift in Sources */,
 				486FE4F8290C924A00215F8F /* LoginView.swift in Sources */,
 				486FE4F2290C8FF100215F8F /* LoginViewController.swift in Sources */,
 				486FE4D8290C8D5800215F8F /* AppDelegate.swift in Sources */,
 				486FE4FC290C948200215F8F /* MainButton.swift in Sources */,
 				486FE4F4290C90A300215F8F /* Preview.swift in Sources */,
 				486FE4F6290C917600215F8F /* AppColors.swift in Sources */,
+				486FE502290CA2BB00215F8F /* MainCoordinator.swift in Sources */,
 				486FE4DA290C8D5800215F8F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
