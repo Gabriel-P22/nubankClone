@@ -28,16 +28,16 @@ class LoginView: UIView {
     lazy var logo: UIImageView = {
         let img = UIImageView()
         img.translatesAutoresizingMaskIntoConstraints = false
-        img.image = UIImage(named: "purpleLogo")
-        img.contentMode = .scaleAspectFit
+        img.image = UIImage(named: "loginImg")
+        img.contentMode = .scaleAspectFill
         return img
     }()
     
     func makeConfig() {
         backgroundColor = AppColors.instanciate.mainPurple
+        addSubview(logo)
         addSubview(register)
         addSubview(loginButton)
-        addSubview(logo)
         makeContraints()
     }
     
@@ -56,8 +56,10 @@ class LoginView: UIView {
             
             logo.centerXAnchor.constraint(equalTo: centerXAnchor),
             logo.centerYAnchor.constraint(equalTo: centerYAnchor),
-            logo.heightAnchor.constraint(equalToConstant: 80),
-            logo.widthAnchor.constraint(equalToConstant: 80),
+            logo.bottomAnchor.constraint(equalTo: bottomAnchor),
+            logo.topAnchor.constraint(equalTo: topAnchor),
+            logo.leadingAnchor.constraint(equalTo: leadingAnchor),
+            logo.trailingAnchor.constraint(equalTo: trailingAnchor),
         ])
         
     }
