@@ -8,10 +8,15 @@
 import Foundation
 import Swinject
 
-class AppConainter {
-    public static let shared: Container = {
-        let container = Container()
-        container.register(LoginViewModelProtocol.self) { _ in LoginViewModel() }
-        return container
-    }()
+class AppContainer {
+    public static func registerContainer() {
+        AppContainer.getContainer()?.register(LoginViewModelProtocol.self) { _ in LoginViewModel() }
+    }
+    
+    public static func getContainer() -> Container? {
+        if let delegate = UIApplication.shared.delegate as? AppDelegate {
+            return delegate.container
+        }
+        return nil
+    }
 }

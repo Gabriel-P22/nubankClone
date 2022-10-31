@@ -10,9 +10,17 @@ import UIKit
 
 class LoginViewController: UIViewController, Coordinating {
     var coordinator: Coordinator?
-    var viewModel: LoginViewModelProtocol?
+    private var viewModel: LoginViewModelProtocol?
+    private let customView: LoginView = LoginView()
     
-    let customView: LoginView = LoginView()
+    init(viewModel: LoginViewModelProtocol? = AppContainer.getContainer()?.resolve(LoginViewModelProtocol.self) ?? nil) {
+        super.init(nibName: nil, bundle: nil)
+        self.viewModel = viewModel
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         view = customView
