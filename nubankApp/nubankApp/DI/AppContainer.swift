@@ -11,6 +11,7 @@ import Swinject
 class AppContainer {
     public static func registerContainer() {
         AppContainer.getContainer()?.register(LoginViewModelProtocol.self) { _ in LoginViewModel() }
+        AppContainer.getContainer()?.register(SignUpViewModelProtocol.self) { _ in SignUpViewModel() }
     }
     
     public static func getContainer() -> Container? {

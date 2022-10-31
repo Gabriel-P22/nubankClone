@@ -8,8 +8,7 @@
 import Foundation
 import UIKit
 
-class LoginViewController: UIViewController, Coordinating {
-    var coordinator: Coordinator?
+class LoginViewController: BaseViewController {
     private var viewModel: LoginViewModelProtocol?
     private let customView: LoginView = LoginView()
     
@@ -26,5 +25,12 @@ class LoginViewController: UIViewController, Coordinating {
         view = customView
         view.backgroundColor = AppColors.instanciate.white
         customView.makeConfig()
+        customView.register.addTarget(self, action: #selector(signUp), for: .touchUpInside)
     }
+    
+    @objc func signUp() {
+        super.navigationController?.navigationItem.hidesBackButton = true
+        super.coordinator?.eventCurrend(with: .signUp)
+    }
+    
 }
