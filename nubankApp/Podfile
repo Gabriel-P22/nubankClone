@@ -7,5 +7,6 @@ target 'nubankApp' do
 
   # Main pods
 	pod 'Swinject'
-
+  pod 'FirebaseAnalytics'
+  
 end
