@@ -13,6 +13,8 @@
 		480C1E102910880C003C5570 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C1E0F2910880C003C5570 /* SignUpViewModel.swift */; };
 		480C1E1229108883003C5570 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C1E1129108883003C5570 /* SignUpView.swift */; };
 		480C1E1429108AC3003C5570 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C1E1329108AC3003C5570 /* BaseViewController.swift */; };
+		480C1E1629108CB5003C5570 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C1E1529108CB5003C5570 /* CustomTableView.swift */; };
+		480C1E1829108D89003C5570 /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C1E1729108D89003C5570 /* EmptyCell.swift */; };
 		486FE4D8290C8D5800215F8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4D7290C8D5800215F8F /* AppDelegate.swift */; };
 		486FE4DA290C8D5800215F8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4D9290C8D5800215F8F /* SceneDelegate.swift */; };
 		486FE4E1290C8D5A00215F8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 486FE4E0290C8D5A00215F8F /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 		480C1E0F2910880C003C5570 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		480C1E1129108883003C5570 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		480C1E1329108AC3003C5570 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		480C1E1529108CB5003C5570 /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
+		480C1E1729108D89003C5570 /* EmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
 		486FE4D4290C8D5800215F8F /* nubankApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nubankApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		486FE4D7290C8D5800215F8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		486FE4D9290C8D5800215F8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -185,6 +189,8 @@
 			children = (
 				486FE4FB290C948200215F8F /* MainButton.swift */,
 				480C1E1329108AC3003C5570 /* BaseViewController.swift */,
+				480C1E1529108CB5003C5570 /* CustomTableView.swift */,
+				480C1E1729108D89003C5570 /* EmptyCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -339,11 +345,13 @@
 				486FE4D8290C8D5800215F8F /* AppDelegate.swift in Sources */,
 				486FE4FC290C948200215F8F /* MainButton.swift in Sources */,
 				486FE4F4290C90A300215F8F /* Preview.swift in Sources */,
+				480C1E1829108D89003C5570 /* EmptyCell.swift in Sources */,
 				486FE4F6290C917600215F8F /* AppColors.swift in Sources */,
 				486FE504290CAA0F00215F8F /* AppContainer.swift in Sources */,
 				480C1E1229108883003C5570 /* SignUpView.swift in Sources */,
 				486FE502290CA2BB00215F8F /* MainCoordinator.swift in Sources */,
 				480C1E0E291087AD003C5570 /* SingUpViewController.swift in Sources */,
+				480C1E1629108CB5003C5570 /* CustomTableView.swift in Sources */,
 				486FE4DA290C8D5800215F8F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

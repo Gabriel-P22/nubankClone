@@ -15,4 +15,8 @@ class BaseViewController: UIViewController, Coordinating {
         navigationItem.hidesBackButton = true
     }
     
+    override func viewDidLoad() {
+        view.backgroundColor = AppColors.instanciate.white
+    }
+    
 }

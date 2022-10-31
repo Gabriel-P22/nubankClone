@@ -9,5 +9,23 @@ import Foundation
 import UIKit
 
 class SignUpView: UIView {
+    lazy var tableView: CustomTableView = {
+        let tableView = CustomTableView()
+        tableView.setUp()
+        return tableView
+    }()
     
+    func render() {
+        addSubview(tableView)
+        makeContraints()
+    }
+    
+    func makeContraints() {
+        NSLayoutConstraint.activate([
+            tableView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            tableView.topAnchor.constraint(equalTo: topAnchor),
+            tableView.bottomAnchor.constraint(equalTo: bottomAnchor),
+        ])
+    }
 }
