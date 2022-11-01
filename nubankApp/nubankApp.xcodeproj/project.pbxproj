@@ -54,6 +54,9 @@
 		48E8D2812911CB5E00EF9283 /* UserDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8D2802911CB5E00EF9283 /* UserDI.swift */; };
 		48E8D2832911CBA300EF9283 /* SignUpDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8D2822911CBA300EF9283 /* SignUpDI.swift */; };
 		48E8D2852911CBCA00EF9283 /* AdapterDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8D2842911CBCA00EF9283 /* AdapterDI.swift */; };
+		48E8D2882911CDE300EF9283 /* SignUpSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8D2872911CDE300EF9283 /* SignUpSuccessView.swift */; };
+		48E8D28A2911CDEB00EF9283 /* SignUpSuccessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8D2892911CDEB00EF9283 /* SignUpSuccessViewModel.swift */; };
+		48E8D28C2911CDF500EF9283 /* SignUpSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8D28B2911CDF500EF9283 /* SignUpSuccessViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +110,9 @@
 		48E8D2802911CB5E00EF9283 /* UserDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDI.swift; sourceTree = "<group>"; };
 		48E8D2822911CBA300EF9283 /* SignUpDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDI.swift; sourceTree = "<group>"; };
 		48E8D2842911CBCA00EF9283 /* AdapterDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterDI.swift; sourceTree = "<group>"; };
+		48E8D2872911CDE300EF9283 /* SignUpSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSuccessView.swift; sourceTree = "<group>"; };
+		48E8D2892911CDEB00EF9283 /* SignUpSuccessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSuccessViewModel.swift; sourceTree = "<group>"; };
+		48E8D28B2911CDF500EF9283 /* SignUpSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSuccessViewController.swift; sourceTree = "<group>"; };
 		78C5BA58C1E1F61DC9CA0AA8 /* Pods-nubankApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nubankApp.release.xcconfig"; path = "Target Support Files/Pods-nubankApp/Pods-nubankApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +139,7 @@
 		480C1E0C2910879E003C5570 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				48E8D2862911CDB100EF9283 /* SignUpSuccess */,
 				480C1E1B291092DF003C5570 /* Questions */,
 				480C1E0D291087AD003C5570 /* SingUpViewController.swift */,
 				480C1E0F2910880C003C5570 /* SignUpViewModel.swift */,
@@ -330,6 +337,16 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		48E8D2862911CDB100EF9283 /* SignUpSuccess */ = {
+			isa = PBXGroup;
+			children = (
+				48E8D2872911CDE300EF9283 /* SignUpSuccessView.swift */,
+				48E8D28B2911CDF500EF9283 /* SignUpSuccessViewController.swift */,
+				48E8D2892911CDEB00EF9283 /* SignUpSuccessViewModel.swift */,
+			);
+			path = SignUpSuccess;
+			sourceTree = "<group>";
+		};
 		A2F459B7754BABAB362706A4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -482,7 +499,9 @@
 				480C1E1A29109146003C5570 /* CustomComponentProtocol.swift in Sources */,
 				486FE4F4290C90A300215F8F /* Preview.swift in Sources */,
 				480C1E1D291092F9003C5570 /* Questions.swift in Sources */,
+				48E8D2882911CDE300EF9283 /* SignUpSuccessView.swift in Sources */,
 				480C1E1829108D89003C5570 /* EmptyCell.swift in Sources */,
+				48E8D28A2911CDEB00EF9283 /* SignUpSuccessViewModel.swift in Sources */,
 				486FE4F6290C917600215F8F /* AppColors.swift in Sources */,
 				480C1E21291098D0003C5570 /* CustomTextField.swift in Sources */,
 				486FE504290CAA0F00215F8F /* AppContainer.swift in Sources */,
@@ -490,6 +509,7 @@
 				480C1E402910BB72003C5570 /* UserModel.swift in Sources */,
 				480C1E3429109C09003C5570 /* AppFonts.swift in Sources */,
 				480C1E1229108883003C5570 /* SignUpView.swift in Sources */,
+				48E8D28C2911CDF500EF9283 /* SignUpSuccessViewController.swift in Sources */,
 				48E8D2812911CB5E00EF9283 /* UserDI.swift in Sources */,
 				48E8D2832911CBA300EF9283 /* SignUpDI.swift in Sources */,
 				486FE502290CA2BB00215F8F /* MainCoordinator.swift in Sources */,

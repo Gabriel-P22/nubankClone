@@ -38,7 +38,7 @@ class SignUpViewController: BaseViewController {
     @objc func submit() {
         viewModel?.createUser(completion: { userModel, error in
             if error != nil {
-                super.coordinator?.start()
+                super.coordinator?.eventCurrend(with: .signUpSuccess)
             }
             return nil
         })

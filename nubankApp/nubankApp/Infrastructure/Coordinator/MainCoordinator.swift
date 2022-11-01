@@ -10,6 +10,7 @@ import UIKit
 
 enum Event {
     case signUp
+    case signUpSuccess
 }
 
 protocol Coordinator {
