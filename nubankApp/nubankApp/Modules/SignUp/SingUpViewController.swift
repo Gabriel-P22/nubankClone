@@ -36,6 +36,10 @@ class SignUpViewController: BaseViewController {
         super.coordinator?.start()
     }
     
+    @objc func submit() {
+        viewModel?.createUser()
+    }
+    
 }
 
 extension SignUpViewController: UITableViewDataSource, UITableViewDelegate {
@@ -53,6 +57,7 @@ extension SignUpViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let footer = ButtonStack()
         footer.cancelButton.addTarget(self, action: #selector(cancel), for: .touchUpInside)
+        footer.submitButton.addTarget(self, action: #selector(submit), for: .touchUpInside)
         footer.render()
         return footer
     }

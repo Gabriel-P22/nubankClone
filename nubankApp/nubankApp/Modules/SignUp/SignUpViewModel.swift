@@ -10,23 +10,29 @@ import Foundation
 protocol SignUpViewModelProtocol {
     var listComponents: [CustomComponentProtocol] { get set }
     
+    func createUser()
     func setUpComponents()
 }
 
 class SignUpViewModel: SignUpViewModelProtocol {
     var listComponents: [CustomComponentProtocol] = []
+    var oauth: OAuthProtocol?
     
-    public typealias test = (() -> ())
+    let emailField: Questions = Questions()
+    let passwordField: Questions = Questions()
+    
+    
+    init(oauth: OAuthProtocol?) {
+        self.oauth = oauth
+    }
     
     func setUpComponents() {
-        let emailField: Questions = Questions()
         emailField.type = .email
-        emailField.setTitleQuestion(value: "Email:")
+        emailField.setTitleQuestion(value: "Email: ")
         emailField.render()
         
-        let passwordField: Questions = Questions()
         passwordField.type = .password
-        passwordField.setTitleQuestion(value: "Password:")
+        passwordField.setTitleQuestion(value: "Password: ")
         passwordField.render()
         
         listComponents = [emailField, passwordField]
@@ -34,5 +40,11 @@ class SignUpViewModel: SignUpViewModelProtocol {
     
     func getComponent() -> [CustomComponentProtocol] {
         return listComponents
+    }
+    
+    func createUser() {
+        if let email = emailField.questionField.text, let password = passwordField.questionField.text {
+            oauth?.createUser(email: email, password: password)
+        }
     }
 }
