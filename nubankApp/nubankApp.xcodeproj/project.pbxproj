@@ -33,6 +33,8 @@
 		480C1E3D2910B4FB003C5570 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 480C1E3C2910B4FB003C5570 /* GoogleService-Info.plist */; };
 		480C1E402910BB72003C5570 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C1E3F2910BB72003C5570 /* UserModel.swift */; };
 		480C1E432910BF9B003C5570 /* AuthUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C1E422910BF9B003C5570 /* AuthUseCase.swift */; };
+		480C1E452910C85A003C5570 /* UserModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C1E442910C85A003C5570 /* UserModelProtocol.swift */; };
+		480C1E472910C8D1003C5570 /* UserModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C1E462910C8D1003C5570 /* UserModelBuilder.swift */; };
 		486FE4D8290C8D5800215F8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4D7290C8D5800215F8F /* AppDelegate.swift */; };
 		486FE4DA290C8D5800215F8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4D9290C8D5800215F8F /* SceneDelegate.swift */; };
 		486FE4E1290C8D5A00215F8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 486FE4E0290C8D5A00215F8F /* Assets.xcassets */; };
@@ -76,6 +78,8 @@
 		480C1E3C2910B4FB003C5570 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		480C1E3F2910BB72003C5570 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		480C1E422910BF9B003C5570 /* AuthUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUseCase.swift; sourceTree = "<group>"; };
+		480C1E442910C85A003C5570 /* UserModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModelProtocol.swift; sourceTree = "<group>"; };
+		480C1E462910C8D1003C5570 /* UserModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModelBuilder.swift; sourceTree = "<group>"; };
 		486FE4D4290C8D5800215F8F /* nubankApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nubankApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		486FE4D7290C8D5800215F8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		486FE4D9290C8D5800215F8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				480C1E3F2910BB72003C5570 /* UserModel.swift */,
+				480C1E442910C85A003C5570 /* UserModelProtocol.swift */,
+				480C1E462910C8D1003C5570 /* UserModelBuilder.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -438,11 +444,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480C1E452910C85A003C5570 /* UserModelProtocol.swift in Sources */,
 				486FE500290CA2B000215F8F /* Coordinator.swift in Sources */,
 				480C1E102910880C003C5570 /* SignUpViewModel.swift in Sources */,
 				480C1E1F291096B3003C5570 /* CustomCell.swift in Sources */,
 				480C1E382910A3A7003C5570 /* ButtonStack.swift in Sources */,
 				480C1E432910BF9B003C5570 /* AuthUseCase.swift in Sources */,
+				480C1E472910C8D1003C5570 /* UserModelBuilder.swift in Sources */,
 				486FE4F8290C924A00215F8F /* LoginView.swift in Sources */,
 				480C1E3B2910B405003C5570 /* Auth.swift in Sources */,
 				486FE506290CAA9E00215F8F /* LoginViewModel.swift in Sources */,

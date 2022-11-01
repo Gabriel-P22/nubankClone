@@ -26,7 +26,7 @@ class OAuth: OAuthProtocol {
                 completion(nil, nil)
                 print("Error in SignUp")
             } else {
-                self.userModel?.email = result?.user.email ?? "Error"
+                self.userModel?.withEmail(email: result?.user.email)
                 completion(self.userModel, "Success \(result)")
             }
         }

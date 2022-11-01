@@ -37,14 +37,13 @@ class SignUpViewController: BaseViewController {
     }
     
     @objc func submit() {
-        viewModel?.createUser(completion: { UserModel, error in
+        viewModel?.createUser(completion: { userModel, error in
             if error != nil {
                 super.coordinator?.start()
             }
             return nil
         })
     }
-    
 }
 
 extension SignUpViewController: UITableViewDataSource, UITableViewDelegate {

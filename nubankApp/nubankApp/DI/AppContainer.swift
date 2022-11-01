@@ -16,7 +16,7 @@ class AppContainer {
         AppContainer.getContainer()?.register(SignUpViewModelProtocol.self) { _ in SignUpViewModel(userCase: AppContainer.getContainer()?.resolve(AuthUseCaseProtocol.self)) }
         AppContainer.getContainer()?.register(
             UserModelProtocol.self,
-            factory: { _ in UserModel()}
+            factory: { _ in UserModelBuilder()}
         ).inObjectScope(.container)
     }
     

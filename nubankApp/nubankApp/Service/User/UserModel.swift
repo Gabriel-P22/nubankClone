@@ -6,13 +6,7 @@
 //
 
 import Foundation
-import Firebase
 
-protocol UserModelProtocol {
-    var email: String { get set }
-}
-
-class UserModel: UserModelProtocol {
+struct UserModel {
     var email: String = ""
-
 }
