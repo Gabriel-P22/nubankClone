@@ -23,7 +23,6 @@ class LoginViewController: BaseViewController {
     
     override func viewDidLoad() {
         view = customView
-        view.backgroundColor = AppColors.instanciate.white
         customView.makeConfig()
         customView.register.addTarget(self, action: #selector(signUp), for: .touchUpInside)
     }

@@ -29,7 +29,7 @@
 		480C1E3229109B07003C5570 /* Mulish-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 480C1E2A29109B07003C5570 /* Mulish-Regular.ttf */; };
 		480C1E3429109C09003C5570 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C1E3329109C09003C5570 /* AppFonts.swift */; };
 		480C1E362910A11C003C5570 /* CustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C1E352910A11B003C5570 /* CustomHeader.swift */; };
-		480C1E382910A3A7003C5570 /* SuccessButtonQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C1E372910A3A7003C5570 /* SuccessButtonQuestion.swift */; };
+		480C1E382910A3A7003C5570 /* ButtonStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C1E372910A3A7003C5570 /* ButtonStack.swift */; };
 		486FE4D8290C8D5800215F8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4D7290C8D5800215F8F /* AppDelegate.swift */; };
 		486FE4DA290C8D5800215F8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4D9290C8D5800215F8F /* SceneDelegate.swift */; };
 		486FE4E1290C8D5A00215F8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 486FE4E0290C8D5A00215F8F /* Assets.xcassets */; };
@@ -69,7 +69,7 @@
 		480C1E2A29109B07003C5570 /* Mulish-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Regular.ttf"; sourceTree = "<group>"; };
 		480C1E3329109C09003C5570 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
 		480C1E352910A11B003C5570 /* CustomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeader.swift; sourceTree = "<group>"; };
-		480C1E372910A3A7003C5570 /* SuccessButtonQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessButtonQuestion.swift; sourceTree = "<group>"; };
+		480C1E372910A3A7003C5570 /* ButtonStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStack.swift; sourceTree = "<group>"; };
 		486FE4D4290C8D5800215F8F /* nubankApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nubankApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		486FE4D7290C8D5800215F8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		486FE4D9290C8D5800215F8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				480C1E1C291092F9003C5570 /* Questions.swift */,
-				480C1E372910A3A7003C5570 /* SuccessButtonQuestion.swift */,
+				480C1E372910A3A7003C5570 /* ButtonStack.swift */,
 			);
 			path = Questions;
 			sourceTree = "<group>";
@@ -408,7 +408,7 @@
 				486FE500290CA2B000215F8F /* Coordinator.swift in Sources */,
 				480C1E102910880C003C5570 /* SignUpViewModel.swift in Sources */,
 				480C1E1F291096B3003C5570 /* CustomCell.swift in Sources */,
-				480C1E382910A3A7003C5570 /* SuccessButtonQuestion.swift in Sources */,
+				480C1E382910A3A7003C5570 /* ButtonStack.swift in Sources */,
 				486FE4F8290C924A00215F8F /* LoginView.swift in Sources */,
 				486FE506290CAA9E00215F8F /* LoginViewModel.swift in Sources */,
 				486FE4F2290C8FF100215F8F /* LoginViewController.swift in Sources */,

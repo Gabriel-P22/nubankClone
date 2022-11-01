@@ -34,7 +34,6 @@ class LoginView: UIView {
     }()
     
     func makeConfig() {
-        backgroundColor = AppColors.instanciate.mainPurple
         addSubview(logo)
         addSubview(register)
         addSubview(loginButton)

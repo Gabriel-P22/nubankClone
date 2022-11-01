@@ -16,6 +16,8 @@ protocol SignUpViewModelProtocol {
 class SignUpViewModel: SignUpViewModelProtocol {
     var listComponents: [CustomComponentProtocol] = []
     
+    public typealias test = (() -> ())
+    
     func setUpComponents() {
         let emailField: Questions = Questions()
         emailField.type = .email
@@ -27,21 +29,7 @@ class SignUpViewModel: SignUpViewModelProtocol {
         passwordField.setTitleQuestion(value: "Password:")
         passwordField.render()
         
-        let sendButton: SuccessButtonQuestion = SuccessButtonQuestion()
-        sendButton.type = .sendButton
-        sendButton.setTitleQuestion(value: "submit")
-        sendButton.setButtonColor(color: AppColors.instanciate.white)
-        sendButton.setButtonBackgroundColor(color: AppColors.instanciate.secondPurple)
-        sendButton.render()
-        
-        let cancelSignUpButton: SuccessButtonQuestion = SuccessButtonQuestion()
-        cancelSignUpButton.type = .cancelSignUp
-        cancelSignUpButton.setTitleQuestion(value: "Cancel")
-        cancelSignUpButton.setButtonColor(color: AppColors.instanciate.white)
-        cancelSignUpButton.setButtonBackgroundColor(color: AppColors.instanciate.secondPurple)
-        cancelSignUpButton.render()
-        
-        listComponents = [emailField, passwordField, sendButton, cancelSignUpButton]
+        listComponents = [emailField, passwordField]
     }
     
     func getComponent() -> [CustomComponentProtocol] {

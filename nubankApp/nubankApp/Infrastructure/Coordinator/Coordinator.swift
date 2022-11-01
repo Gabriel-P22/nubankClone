@@ -21,7 +21,7 @@ class MainCoordinator: Coordinator {
     func start() {
         var vc: UIViewController & Coordinating = LoginViewController()
         vc.coordinator = self
-        navigationControler?.setViewControllers([vc], animated: false)
+        navigationControler?.setViewControllers([vc], animated: true)
     }
     
     private func goToSignIn() {        

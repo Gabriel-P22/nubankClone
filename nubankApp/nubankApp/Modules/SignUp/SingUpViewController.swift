@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+
+
 class SignUpViewController: BaseViewController {
     
     var viewModel: SignUpViewModelProtocol?
@@ -30,6 +32,10 @@ class SignUpViewController: BaseViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    @objc func cancel() {
+        super.coordinator?.start()
+    }
+    
 }
 
 extension SignUpViewController: UITableViewDataSource, UITableViewDelegate {
@@ -44,6 +50,13 @@ extension SignUpViewController: UITableViewDataSource, UITableViewDelegate {
         return header
     }
     
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footer = ButtonStack()
+        footer.cancelButton.addTarget(self, action: #selector(cancel), for: .touchUpInside)
+        footer.render()
+        return footer
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         guard let components: CustomComponentProtocol = viewModel?.listComponents[indexPath.row] else { return UITableViewCell() }
@@ -56,16 +69,6 @@ extension SignUpViewController: UITableViewDataSource, UITableViewDelegate {
             
         case .password:
             guard let cell = components as? Questions else { return UITableViewCell() }
-            cell.render()
-            return cell
-            
-        case .sendButton:
-            guard let cell = components as? SuccessButtonQuestion else { return UITableViewCell() }
-            cell.render()
-            return cell
-            
-        case .cancelSignUp:
-            guard let cell = components as? SuccessButtonQuestion else { return UITableViewCell() }
             cell.render()
             return cell
             

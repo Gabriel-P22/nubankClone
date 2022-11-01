@@ -16,6 +16,4 @@ protocol CustomComponentProtocol {
 public enum ComponentsType: String, CaseIterable {
     case email
     case password
-    case sendButton
-    case cancelSignUp
 }
