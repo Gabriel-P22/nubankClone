@@ -10,7 +10,7 @@ import Foundation
 protocol SignUpViewModelProtocol {
     var listComponents: [CustomComponentProtocol] { get set }
     
-    func createUser()
+    func createUser(completion: @escaping (UserModelProtocol?, String?) -> String?)
     func setUpComponents()
 }
 
@@ -43,9 +43,9 @@ class SignUpViewModel: SignUpViewModelProtocol {
         return listComponents
     }
     
-    func createUser() {
+    func createUser(completion: @escaping (UserModelProtocol?, String?) -> String?) {
         if let email = emailField.questionField.text, let password = passwordField.questionField.text {
-            userCase?.createUser(email: email, password: password)
+            userCase?.createUser(email: email, password: password, completion: completion)
         }
     }
 }

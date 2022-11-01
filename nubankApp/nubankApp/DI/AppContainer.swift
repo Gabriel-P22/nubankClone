@@ -14,6 +14,10 @@ class AppContainer {
         AppContainer.getContainer()?.register(OAuthProtocol.self) { _ in OAuth() }
         AppContainer.getContainer()?.register(AuthUseCaseProtocol.self) { _ in AuthUseCase(oauth: AppContainer.getContainer()?.resolve(OAuthProtocol.self)) }
         AppContainer.getContainer()?.register(SignUpViewModelProtocol.self) { _ in SignUpViewModel(userCase: AppContainer.getContainer()?.resolve(AuthUseCaseProtocol.self)) }
+        AppContainer.getContainer()?.register(
+            UserModelProtocol.self,
+            factory: { _ in UserModel()}
+        ).inObjectScope(.container)
     }
     
     public static func getContainer() -> Container? {

@@ -8,7 +8,7 @@
 import Foundation
 
 protocol AuthUseCaseProtocol {
-    func createUser(email: String, password: String)
+    func createUser(email: String, password: String, completion: @escaping (UserModelProtocol?, String?) -> String?)
 }
 
 class AuthUseCase: AuthUseCaseProtocol {
@@ -18,7 +18,7 @@ class AuthUseCase: AuthUseCaseProtocol {
         self.oauth = oauth
     }
     
-    func createUser(email: String, password: String) {
-        oauth?.createUser(email: email, password: password)
+    func createUser(email: String, password: String, completion: @escaping (UserModelProtocol?, String?) -> String?) {
+        oauth?.createUser(email: email, password: password, completion: completion)
     }
 }

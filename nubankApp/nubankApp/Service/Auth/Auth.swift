@@ -9,22 +9,25 @@ import Foundation
 import Firebase
 
 protocol OAuthProtocol {
-    func createUser(email: String, password: String)
+    func createUser(email: String, password: String, completion: @escaping (UserModelProtocol?, String?) -> String?)
 }
 
 class OAuth: OAuthProtocol {
     var auth: Auth?
+    var userModel: UserModelProtocol? = AppContainer.getContainer()?.resolve(UserModelProtocol.self) ?? nil
     
     init(auth: Auth? = Auth.auth()) {
         self.auth = auth
     }
     
-    func createUser(email: String, password: String) {
+    func createUser(email: String, password: String, completion: @escaping (UserModelProtocol?, String?) -> String?) {
         auth?.createUser(withEmail: email, password: password) { (result, error) in
             if error != nil {
+                completion(nil, nil)
                 print("Error in SignUp")
             } else {
-                print("Success \(result)")
+                self.userModel?.email = result?.user.email ?? "Error"
+                completion(self.userModel, "Success \(result)")
             }
         }
     }
