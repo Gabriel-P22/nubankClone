@@ -8,12 +8,11 @@
 import Foundation
 import UIKit
 
-
-
 class SignUpViewController: BaseViewController {
     
     var viewModel: SignUpViewModelProtocol?
     var customView: SignUpView? = SignUpView()
+    var signUpCellAdapter: SignUpCellAdapterProtocol = SignUpCellAdapter()
     
     init(viewModel: SignUpViewModelProtocol?) {
         super.init(nibName: nil, bundle: nil)
@@ -52,14 +51,13 @@ extension SignUpViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let header = CustomHeader()
-        header.setTitleText(text: "SignUp")
+        let header = signUpCellAdapter.getHeader(text: "SignUp")
         header.render()
         return header
     }
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        let footer = ButtonStack()
+        let footer = signUpCellAdapter.getFooter()
         footer.cancelButton.addTarget(self, action: #selector(cancel), for: .touchUpInside)
         footer.submitButton.addTarget(self, action: #selector(submit), for: .touchUpInside)
         footer.render()

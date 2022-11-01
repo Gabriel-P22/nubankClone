@@ -48,6 +48,8 @@
 		486FE502290CA2BB00215F8F /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE501290CA2BB00215F8F /* MainCoordinator.swift */; };
 		486FE504290CAA0F00215F8F /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE503290CAA0F00215F8F /* AppContainer.swift */; };
 		486FE506290CAA9E00215F8F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE505290CAA9E00215F8F /* LoginViewModel.swift */; };
+		48E8D27B29119F8300EF9283 /* SignUpCellAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8D27A29119F8300EF9283 /* SignUpCellAdapter.swift */; };
+		48E8D27D2911A1B600EF9283 /* LoginDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8D27C2911A1B600EF9283 /* LoginDI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +97,8 @@
 		486FE501290CA2BB00215F8F /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		486FE503290CAA0F00215F8F /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 		486FE505290CAA9E00215F8F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		48E8D27A29119F8300EF9283 /* SignUpCellAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCellAdapter.swift; sourceTree = "<group>"; };
+		48E8D27C2911A1B600EF9283 /* LoginDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDI.swift; sourceTree = "<group>"; };
 		78C5BA58C1E1F61DC9CA0AA8 /* Pods-nubankApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nubankApp.release.xcconfig"; path = "Target Support Files/Pods-nubankApp/Pods-nubankApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +138,7 @@
 			children = (
 				480C1E1C291092F9003C5570 /* Questions.swift */,
 				480C1E372910A3A7003C5570 /* ButtonStack.swift */,
+				48E8D27A29119F8300EF9283 /* SignUpCellAdapter.swift */,
 			);
 			path = Questions;
 			sourceTree = "<group>";
@@ -204,8 +209,6 @@
 			children = (
 				486FE4F9290C939700215F8F /* Assets */,
 				486FE4FD290CA26C00215F8F /* Infrastructure */,
-				480C1E412910BEAA003C5570 /* Service */,
-				486FE4EF290C8DF400215F8F /* DI */,
 				486FE4EE290C8DEC00215F8F /* Modules */,
 				486FE4ED290C8DE200215F8F /* SplashScreen */,
 				486FE4EC290C8DDC00215F8F /* Helpers */,
@@ -257,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				486FE503290CAA0F00215F8F /* AppContainer.swift */,
+				48E8D27C2911A1B600EF9283 /* LoginDI.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -298,6 +302,8 @@
 		486FE4FD290CA26C00215F8F /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				486FE4EF290C8DF400215F8F /* DI */,
+				480C1E412910BEAA003C5570 /* Service */,
 				486FE4FE290CA29B00215F8F /* Coordinator */,
 			);
 			path = Infrastructure;
@@ -456,6 +462,7 @@
 				486FE506290CAA9E00215F8F /* LoginViewModel.swift in Sources */,
 				486FE4F2290C8FF100215F8F /* LoginViewController.swift in Sources */,
 				480C1E1429108AC3003C5570 /* BaseViewController.swift in Sources */,
+				48E8D27D2911A1B600EF9283 /* LoginDI.swift in Sources */,
 				486FE4D8290C8D5800215F8F /* AppDelegate.swift in Sources */,
 				486FE4FC290C948200215F8F /* MainButton.swift in Sources */,
 				480C1E1A29109146003C5570 /* CustomComponentProtocol.swift in Sources */,
@@ -465,6 +472,7 @@
 				486FE4F6290C917600215F8F /* AppColors.swift in Sources */,
 				480C1E21291098D0003C5570 /* CustomTextField.swift in Sources */,
 				486FE504290CAA0F00215F8F /* AppContainer.swift in Sources */,
+				48E8D27B29119F8300EF9283 /* SignUpCellAdapter.swift in Sources */,
 				480C1E402910BB72003C5570 /* UserModel.swift in Sources */,
 				480C1E3429109C09003C5570 /* AppFonts.swift in Sources */,
 				480C1E1229108883003C5570 /* SignUpView.swift in Sources */,
