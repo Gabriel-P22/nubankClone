@@ -14,6 +14,5 @@ class UserDI {
             UserModelProtocol.self,
             factory: { _ in UserModelBuilder()}
         ).inObjectScope(.container)
-        AppContainer.getContainer()?.register(SignUpViewModelProtocol.self) { _ in SignUpViewModel(userCase: AppContainer.getContainer()?.resolve(AuthUseCaseProtocol.self)) }
     }
 }

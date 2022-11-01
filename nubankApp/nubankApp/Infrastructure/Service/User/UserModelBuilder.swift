@@ -15,6 +15,11 @@ class UserModelBuilder: UserModelProtocol {
         return self
     }
     
+    func withName(name: String?) -> UserModelProtocol {
+        userModel.name = name ?? "Name"
+        return self
+    }
+    
     func getUser() -> UserModel? {
         return userModel
     }

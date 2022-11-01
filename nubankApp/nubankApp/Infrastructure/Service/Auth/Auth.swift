@@ -9,7 +9,8 @@ import Foundation
 import Firebase
 
 protocol OAuthProtocol {
-    func createUser(email: String, password: String, completion: @escaping (UserModelProtocol?, String?) -> String?)
+    func createUser(email: String, password: String, completion: @escaping (UserModelProtocol?, String?) -> Void)
+    func sendUser(name: String?)
 }
 
 class OAuth: OAuthProtocol {
@@ -20,7 +21,7 @@ class OAuth: OAuthProtocol {
         self.auth = auth
     }
     
-    func createUser(email: String, password: String, completion: @escaping (UserModelProtocol?, String?) -> String?) {
+    func createUser(email: String, password: String, completion: @escaping (UserModelProtocol?, String?) -> Void) {
         auth?.createUser(withEmail: email, password: password) { [weak self] (result, error) in
             guard let self = self else { return }
             
@@ -28,13 +29,22 @@ class OAuth: OAuthProtocol {
                 completion(nil, nil)
                 print("Error in SignUp")
             } else {
-                self.makeUser(email: result?.user.email)
+                self.userModel?.withEmail(email: result?.user.email)
                 completion(self.userModel, "\(result)")
             }
         }
     }
     
-    private func makeUser(email: String?) {
-        userModel?.withEmail(email: email)
+    func sendUser(name: String?) {
+        let value = [
+            "name": name
+        ]
+        
+        _ = Firestore.firestore()
+            .collection("users")
+            .document(auth?.currentUser?.uid ?? "Error")
+            .setData(value)
+        
+        self.userModel?.withName(name: name)
     }
 }

@@ -12,5 +12,4 @@ class LoginDI {
     public static func registerContainer() {
         AppContainer.getContainer()?.register(LoginViewModelProtocol.self) { _ in LoginViewModel() }
     }
-    
 }

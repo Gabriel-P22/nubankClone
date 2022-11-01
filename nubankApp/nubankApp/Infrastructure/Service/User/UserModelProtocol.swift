@@ -9,5 +9,6 @@ protocol UserModelProtocol {
     var userModel: UserModel { get set }
     
     func withEmail(email: String?) -> UserModelProtocol
+    func withName(name: String?) -> UserModelProtocol
     func getUser() -> UserModel?
 }

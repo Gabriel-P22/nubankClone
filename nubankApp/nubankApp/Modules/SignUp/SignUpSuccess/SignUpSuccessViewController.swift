@@ -17,7 +17,7 @@ class SignUpSuccessViewController: BaseViewController {
         view = customView
         customView?.render()
         if let user = viewModel?.getUser() {
-            customView?.setSuccessMessage(name: user.email, email: user.email)
+            customView?.setSuccessMessage(name: user.name, email: user.email)
             customView?.setButtonTitle(title: "Go Back Home")
             customView?.backHomeButton.addTarget(self, action: #selector(goToHomeScreen), for: .touchUpInside)
         }

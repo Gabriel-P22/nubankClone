@@ -10,21 +10,21 @@ import Foundation
 protocol SignUpViewModelProtocol {
     var listComponents: [CustomComponentProtocol] { get set }
     
-    func createUser(completion: @escaping (UserModelProtocol?, String?) -> String?)
+    func createUser(completion: @escaping (UserModelProtocol?, String?) -> Void)
     func setUpComponents()
 }
 
 class SignUpViewModel: SignUpViewModelProtocol {
     var listComponents: [CustomComponentProtocol] = []
     
-    
     let emailField: Questions = Questions()
     let passwordField: Questions = Questions()
+    let nameField: Questions = Questions()
     
-    var userCase: AuthUseCaseProtocol?
+    var useCase: AuthUseCaseProtocol?
     
-    init(userCase: AuthUseCaseProtocol?) {
-        self.userCase = userCase
+    init(useCase: AuthUseCaseProtocol?) {
+        self.useCase = useCase
     }
     
     func setUpComponents() {
@@ -36,16 +36,21 @@ class SignUpViewModel: SignUpViewModelProtocol {
         passwordField.setTitleQuestion(value: "Password: ")
         passwordField.render()
         
-        listComponents = [emailField, passwordField]
+        nameField.type = .name
+        nameField.setTitleQuestion(value: "Name: ")
+        nameField.render()
+        
+        listComponents = [nameField, emailField, passwordField]
     }
     
     func getComponent() -> [CustomComponentProtocol] {
         return listComponents
     }
     
-    func createUser(completion: @escaping (UserModelProtocol?, String?) -> String?) {
-        if let email = emailField.questionField.text, let password = passwordField.questionField.text {
-            userCase?.createUser(email: email, password: password, completion: completion)
+    func createUser(completion: @escaping (UserModelProtocol?, String?) -> Void) {
+        if let email = emailField.questionField.text, let password = passwordField.questionField.text, let name = nameField.questionField.text {
+            useCase?.createUser(email: email, password: password, completion: completion)
+            useCase?.sendUser(name: name)
         }
     }
 }

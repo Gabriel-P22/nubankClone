@@ -40,7 +40,6 @@ class SignUpViewController: BaseViewController {
             if error != nil {
                 super.coordinator?.eventCurrend(with: .signUpSuccess)
             }
-            return nil
         })
     }
 }
@@ -75,6 +74,11 @@ extension SignUpViewController: UITableViewDataSource, UITableViewDelegate {
             return cell
 
         case .password:
+            guard let cell = components as? Questions else { return UITableViewCell() }
+            cell.render()
+            return cell
+            
+        case .name:
             guard let cell = components as? Questions else { return UITableViewCell() }
             cell.render()
             return cell

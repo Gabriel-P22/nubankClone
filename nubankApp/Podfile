@@ -8,5 +8,7 @@ target 'nubankApp' do
   # Main pods
 	pod 'Swinject'
   pod 'Firebase/Auth'
+  pod 'FirebaseFirestore'
+  pod 'Firebase/Storage'
   
 end
