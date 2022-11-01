@@ -16,12 +16,12 @@ class SignUpViewController: BaseViewController {
     init(viewModel: SignUpViewModelProtocol?) {
         super.init(nibName: nil, bundle: nil)
         self.viewModel = viewModel
+        viewModel?.setUpComponents()
     }
     
     override func viewDidLoad() {
         view = customView
         customView?.render()
-        view.backgroundColor = .red
         customView?.tableView.dataSource = self
         customView?.tableView.delegate = self
     }
@@ -34,10 +34,44 @@ class SignUpViewController: BaseViewController {
 
 extension SignUpViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return viewModel?.listComponents.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = CustomHeader()
+        header.setTitleText(text: "SignUp")
+        header.render()
+        return header
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell(style: .default, reuseIdentifier: "normal")
+        
+        guard let components: CustomComponentProtocol = viewModel?.listComponents[indexPath.row] else { return UITableViewCell() }
+        
+        switch components.type {
+        case .email:
+            guard let cell = components as? Questions else { return UITableViewCell() }
+            cell.render()
+            return cell
+            
+        case .password:
+            guard let cell = components as? Questions else { return UITableViewCell() }
+            cell.render()
+            return cell
+            
+        case .sendButton:
+            guard let cell = components as? SuccessButtonQuestion else { return UITableViewCell() }
+            cell.render()
+            return cell
+            
+        case .cancelSignUp:
+            guard let cell = components as? SuccessButtonQuestion else { return UITableViewCell() }
+            cell.render()
+            return cell
+            
+        default:
+            return UITableViewCell()
+        }
+        
     }
 }

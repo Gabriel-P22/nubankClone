@@ -15,6 +15,21 @@
 		480C1E1429108AC3003C5570 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C1E1329108AC3003C5570 /* BaseViewController.swift */; };
 		480C1E1629108CB5003C5570 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C1E1529108CB5003C5570 /* CustomTableView.swift */; };
 		480C1E1829108D89003C5570 /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C1E1729108D89003C5570 /* EmptyCell.swift */; };
+		480C1E1A29109146003C5570 /* CustomComponentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C1E1929109146003C5570 /* CustomComponentProtocol.swift */; };
+		480C1E1D291092F9003C5570 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C1E1C291092F9003C5570 /* Questions.swift */; };
+		480C1E1F291096B3003C5570 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C1E1E291096B3003C5570 /* CustomCell.swift */; };
+		480C1E21291098D0003C5570 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C1E20291098D0003C5570 /* CustomTextField.swift */; };
+		480C1E2B29109B07003C5570 /* Mulish-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 480C1E2329109B05003C5570 /* Mulish-Black.ttf */; };
+		480C1E2C29109B07003C5570 /* Mulish-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 480C1E2429109B05003C5570 /* Mulish-Medium.ttf */; };
+		480C1E2D29109B07003C5570 /* Mulish-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 480C1E2529109B06003C5570 /* Mulish-ExtraLight.ttf */; };
+		480C1E2E29109B07003C5570 /* Mulish-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 480C1E2629109B06003C5570 /* Mulish-Bold.ttf */; };
+		480C1E2F29109B07003C5570 /* Mulish-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 480C1E2729109B06003C5570 /* Mulish-Light.ttf */; };
+		480C1E3029109B07003C5570 /* Mulish-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 480C1E2829109B06003C5570 /* Mulish-SemiBold.ttf */; };
+		480C1E3129109B07003C5570 /* Mulish-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 480C1E2929109B07003C5570 /* Mulish-ExtraBold.ttf */; };
+		480C1E3229109B07003C5570 /* Mulish-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 480C1E2A29109B07003C5570 /* Mulish-Regular.ttf */; };
+		480C1E3429109C09003C5570 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C1E3329109C09003C5570 /* AppFonts.swift */; };
+		480C1E362910A11C003C5570 /* CustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C1E352910A11B003C5570 /* CustomHeader.swift */; };
+		480C1E382910A3A7003C5570 /* SuccessButtonQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C1E372910A3A7003C5570 /* SuccessButtonQuestion.swift */; };
 		486FE4D8290C8D5800215F8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4D7290C8D5800215F8F /* AppDelegate.swift */; };
 		486FE4DA290C8D5800215F8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4D9290C8D5800215F8F /* SceneDelegate.swift */; };
 		486FE4E1290C8D5A00215F8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 486FE4E0290C8D5A00215F8F /* Assets.xcassets */; };
@@ -40,6 +55,21 @@
 		480C1E1329108AC3003C5570 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		480C1E1529108CB5003C5570 /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
 		480C1E1729108D89003C5570 /* EmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
+		480C1E1929109146003C5570 /* CustomComponentProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomComponentProtocol.swift; sourceTree = "<group>"; };
+		480C1E1C291092F9003C5570 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		480C1E1E291096B3003C5570 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		480C1E20291098D0003C5570 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		480C1E2329109B05003C5570 /* Mulish-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Black.ttf"; sourceTree = "<group>"; };
+		480C1E2429109B05003C5570 /* Mulish-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Medium.ttf"; sourceTree = "<group>"; };
+		480C1E2529109B06003C5570 /* Mulish-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-ExtraLight.ttf"; sourceTree = "<group>"; };
+		480C1E2629109B06003C5570 /* Mulish-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Bold.ttf"; sourceTree = "<group>"; };
+		480C1E2729109B06003C5570 /* Mulish-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Light.ttf"; sourceTree = "<group>"; };
+		480C1E2829109B06003C5570 /* Mulish-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-SemiBold.ttf"; sourceTree = "<group>"; };
+		480C1E2929109B07003C5570 /* Mulish-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-ExtraBold.ttf"; sourceTree = "<group>"; };
+		480C1E2A29109B07003C5570 /* Mulish-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Regular.ttf"; sourceTree = "<group>"; };
+		480C1E3329109C09003C5570 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		480C1E352910A11B003C5570 /* CustomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeader.swift; sourceTree = "<group>"; };
+		480C1E372910A3A7003C5570 /* SuccessButtonQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessButtonQuestion.swift; sourceTree = "<group>"; };
 		486FE4D4290C8D5800215F8F /* nubankApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nubankApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		486FE4D7290C8D5800215F8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		486FE4D9290C8D5800215F8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,11 +111,36 @@
 		480C1E0C2910879E003C5570 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				480C1E1B291092DF003C5570 /* Questions */,
 				480C1E0D291087AD003C5570 /* SingUpViewController.swift */,
 				480C1E0F2910880C003C5570 /* SignUpViewModel.swift */,
 				480C1E1129108883003C5570 /* SignUpView.swift */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		480C1E1B291092DF003C5570 /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				480C1E1C291092F9003C5570 /* Questions.swift */,
+				480C1E372910A3A7003C5570 /* SuccessButtonQuestion.swift */,
+			);
+			path = Questions;
+			sourceTree = "<group>";
+		};
+		480C1E2229109ACC003C5570 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				480C1E2329109B05003C5570 /* Mulish-Black.ttf */,
+				480C1E2629109B06003C5570 /* Mulish-Bold.ttf */,
+				480C1E2929109B07003C5570 /* Mulish-ExtraBold.ttf */,
+				480C1E2529109B06003C5570 /* Mulish-ExtraLight.ttf */,
+				480C1E2729109B06003C5570 /* Mulish-Light.ttf */,
+				480C1E2429109B05003C5570 /* Mulish-Medium.ttf */,
+				480C1E2A29109B07003C5570 /* Mulish-Regular.ttf */,
+				480C1E2829109B06003C5570 /* Mulish-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		486FE4CB290C8D5800215F8F = {
@@ -136,6 +191,7 @@
 			children = (
 				486FE4F3290C90A300215F8F /* Preview.swift */,
 				486FE4F5290C917600215F8F /* AppColors.swift */,
+				480C1E3329109C09003C5570 /* AppFonts.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -179,6 +235,7 @@
 		486FE4F9290C939700215F8F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				480C1E2229109ACC003C5570 /* Fonts */,
 				486FE4E0290C8D5A00215F8F /* Assets.xcassets */,
 			);
 			path = Assets;
@@ -191,6 +248,10 @@
 				480C1E1329108AC3003C5570 /* BaseViewController.swift */,
 				480C1E1529108CB5003C5570 /* CustomTableView.swift */,
 				480C1E1729108D89003C5570 /* EmptyCell.swift */,
+				480C1E1929109146003C5570 /* CustomComponentProtocol.swift */,
+				480C1E1E291096B3003C5570 /* CustomCell.swift */,
+				480C1E20291098D0003C5570 /* CustomTextField.swift */,
+				480C1E352910A11B003C5570 /* CustomHeader.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -281,8 +342,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480C1E3129109B07003C5570 /* Mulish-ExtraBold.ttf in Resources */,
+				480C1E2D29109B07003C5570 /* Mulish-ExtraLight.ttf in Resources */,
+				480C1E2E29109B07003C5570 /* Mulish-Bold.ttf in Resources */,
+				480C1E2B29109B07003C5570 /* Mulish-Black.ttf in Resources */,
+				480C1E3029109B07003C5570 /* Mulish-SemiBold.ttf in Resources */,
+				480C1E2F29109B07003C5570 /* Mulish-Light.ttf in Resources */,
 				486FE4E4290C8D5A00215F8F /* LaunchScreen.storyboard in Resources */,
+				480C1E2C29109B07003C5570 /* Mulish-Medium.ttf in Resources */,
 				486FE4E1290C8D5A00215F8F /* Assets.xcassets in Resources */,
+				480C1E3229109B07003C5570 /* Mulish-Regular.ttf in Resources */,
 				480C1E0B291085C4003C5570 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,18 +407,25 @@
 			files = (
 				486FE500290CA2B000215F8F /* Coordinator.swift in Sources */,
 				480C1E102910880C003C5570 /* SignUpViewModel.swift in Sources */,
+				480C1E1F291096B3003C5570 /* CustomCell.swift in Sources */,
+				480C1E382910A3A7003C5570 /* SuccessButtonQuestion.swift in Sources */,
 				486FE4F8290C924A00215F8F /* LoginView.swift in Sources */,
 				486FE506290CAA9E00215F8F /* LoginViewModel.swift in Sources */,
 				486FE4F2290C8FF100215F8F /* LoginViewController.swift in Sources */,
 				480C1E1429108AC3003C5570 /* BaseViewController.swift in Sources */,
 				486FE4D8290C8D5800215F8F /* AppDelegate.swift in Sources */,
 				486FE4FC290C948200215F8F /* MainButton.swift in Sources */,
+				480C1E1A29109146003C5570 /* CustomComponentProtocol.swift in Sources */,
 				486FE4F4290C90A300215F8F /* Preview.swift in Sources */,
+				480C1E1D291092F9003C5570 /* Questions.swift in Sources */,
 				480C1E1829108D89003C5570 /* EmptyCell.swift in Sources */,
 				486FE4F6290C917600215F8F /* AppColors.swift in Sources */,
+				480C1E21291098D0003C5570 /* CustomTextField.swift in Sources */,
 				486FE504290CAA0F00215F8F /* AppContainer.swift in Sources */,
+				480C1E3429109C09003C5570 /* AppFonts.swift in Sources */,
 				480C1E1229108883003C5570 /* SignUpView.swift in Sources */,
 				486FE502290CA2BB00215F8F /* MainCoordinator.swift in Sources */,
+				480C1E362910A11C003C5570 /* CustomHeader.swift in Sources */,
 				480C1E0E291087AD003C5570 /* SingUpViewController.swift in Sources */,
 				480C1E1629108CB5003C5570 /* CustomTableView.swift in Sources */,
 				486FE4DA290C8D5800215F8F /* SceneDelegate.swift in Sources */,
