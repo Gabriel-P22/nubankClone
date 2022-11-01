@@ -21,14 +21,20 @@ class OAuth: OAuthProtocol {
     }
     
     func createUser(email: String, password: String, completion: @escaping (UserModelProtocol?, String?) -> String?) {
-        auth?.createUser(withEmail: email, password: password) { (result, error) in
+        auth?.createUser(withEmail: email, password: password) { [weak self] (result, error) in
+            guard let self = self else { return }
+            
             if error != nil {
                 completion(nil, nil)
                 print("Error in SignUp")
             } else {
-                self.userModel?.withEmail(email: result?.user.email)
-                completion(self.userModel, "Success \(result)")
+                self.makeUser(email: result?.user.email)
+                completion(self.userModel, "\(result)")
             }
         }
+    }
+    
+    private func makeUser(email: String?) {
+        userModel?.withEmail(email: email)
     }
 }
