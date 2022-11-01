@@ -31,8 +31,4 @@ class OAuth: OAuthProtocol {
             }
         }
     }
-    
-    func login() {
-        auth?.fetchSignInMethods(forEmail: <#T##String#>)
-    }
 }
