@@ -13,7 +13,6 @@ protocol OAuthProtocol {
 }
 
 class OAuth: OAuthProtocol {
-    
     var auth: Auth?
     
     init(auth: Auth? = Auth.auth()) {
@@ -29,5 +28,4 @@ class OAuth: OAuthProtocol {
             }
         }
     }
-    
 }

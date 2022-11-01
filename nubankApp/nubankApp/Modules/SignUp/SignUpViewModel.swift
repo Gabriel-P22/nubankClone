@@ -16,14 +16,15 @@ protocol SignUpViewModelProtocol {
 
 class SignUpViewModel: SignUpViewModelProtocol {
     var listComponents: [CustomComponentProtocol] = []
-    var oauth: OAuthProtocol?
+    
     
     let emailField: Questions = Questions()
     let passwordField: Questions = Questions()
     
+    var userCase: AuthUseCaseProtocol?
     
-    init(oauth: OAuthProtocol?) {
-        self.oauth = oauth
+    init(userCase: AuthUseCaseProtocol?) {
+        self.userCase = userCase
     }
     
     func setUpComponents() {
@@ -44,7 +45,7 @@ class SignUpViewModel: SignUpViewModelProtocol {
     
     func createUser() {
         if let email = emailField.questionField.text, let password = passwordField.questionField.text {
-            oauth?.createUser(email: email, password: password)
+            userCase?.createUser(email: email, password: password)
         }
     }
 }

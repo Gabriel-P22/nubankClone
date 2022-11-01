@@ -31,6 +31,8 @@
 		480C1E382910A3A7003C5570 /* ButtonStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C1E372910A3A7003C5570 /* ButtonStack.swift */; };
 		480C1E3B2910B405003C5570 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C1E3A2910B405003C5570 /* Auth.swift */; };
 		480C1E3D2910B4FB003C5570 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 480C1E3C2910B4FB003C5570 /* GoogleService-Info.plist */; };
+		480C1E402910BB72003C5570 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C1E3F2910BB72003C5570 /* UserModel.swift */; };
+		480C1E432910BF9B003C5570 /* AuthUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C1E422910BF9B003C5570 /* AuthUseCase.swift */; };
 		486FE4D8290C8D5800215F8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4D7290C8D5800215F8F /* AppDelegate.swift */; };
 		486FE4DA290C8D5800215F8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4D9290C8D5800215F8F /* SceneDelegate.swift */; };
 		486FE4E1290C8D5A00215F8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 486FE4E0290C8D5A00215F8F /* Assets.xcassets */; };
@@ -72,6 +74,8 @@
 		480C1E372910A3A7003C5570 /* ButtonStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStack.swift; sourceTree = "<group>"; };
 		480C1E3A2910B405003C5570 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		480C1E3C2910B4FB003C5570 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		480C1E3F2910BB72003C5570 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		480C1E422910BF9B003C5570 /* AuthUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUseCase.swift; sourceTree = "<group>"; };
 		486FE4D4290C8D5800215F8F /* nubankApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nubankApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		486FE4D7290C8D5800215F8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		486FE4D9290C8D5800215F8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,8 +153,26 @@
 			isa = PBXGroup;
 			children = (
 				480C1E3A2910B405003C5570 /* Auth.swift */,
+				480C1E422910BF9B003C5570 /* AuthUseCase.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		480C1E3E2910BB66003C5570 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				480C1E3F2910BB72003C5570 /* UserModel.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		480C1E412910BEAA003C5570 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				480C1E392910B3DE003C5570 /* Auth */,
+				480C1E3E2910BB66003C5570 /* User */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		486FE4CB290C8D5800215F8F = {
@@ -174,8 +196,9 @@
 		486FE4D6290C8D5800215F8F /* nubankApp */ = {
 			isa = PBXGroup;
 			children = (
-				486FE4FD290CA26C00215F8F /* Infrastructure */,
 				486FE4F9290C939700215F8F /* Assets */,
+				486FE4FD290CA26C00215F8F /* Infrastructure */,
+				480C1E412910BEAA003C5570 /* Service */,
 				486FE4EF290C8DF400215F8F /* DI */,
 				486FE4EE290C8DEC00215F8F /* Modules */,
 				486FE4ED290C8DE200215F8F /* SplashScreen */,
@@ -269,7 +292,6 @@
 		486FE4FD290CA26C00215F8F /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
-				480C1E392910B3DE003C5570 /* Auth */,
 				486FE4FE290CA29B00215F8F /* Coordinator */,
 			);
 			path = Infrastructure;
@@ -420,6 +442,7 @@
 				480C1E102910880C003C5570 /* SignUpViewModel.swift in Sources */,
 				480C1E1F291096B3003C5570 /* CustomCell.swift in Sources */,
 				480C1E382910A3A7003C5570 /* ButtonStack.swift in Sources */,
+				480C1E432910BF9B003C5570 /* AuthUseCase.swift in Sources */,
 				486FE4F8290C924A00215F8F /* LoginView.swift in Sources */,
 				480C1E3B2910B405003C5570 /* Auth.swift in Sources */,
 				486FE506290CAA9E00215F8F /* LoginViewModel.swift in Sources */,
@@ -434,6 +457,7 @@
 				486FE4F6290C917600215F8F /* AppColors.swift in Sources */,
 				480C1E21291098D0003C5570 /* CustomTextField.swift in Sources */,
 				486FE504290CAA0F00215F8F /* AppContainer.swift in Sources */,
+				480C1E402910BB72003C5570 /* UserModel.swift in Sources */,
 				480C1E3429109C09003C5570 /* AppFonts.swift in Sources */,
 				480C1E1229108883003C5570 /* SignUpView.swift in Sources */,
 				486FE502290CA2BB00215F8F /* MainCoordinator.swift in Sources */,
