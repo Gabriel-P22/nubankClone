@@ -11,7 +11,7 @@ import Swinject
 class AppContainer {
     public static func registerContainer() {
         AuthDI.registerContainer()
-        LoginDI.registerContainer()
+        DecisionDI.registerContainer()
         UserDI.registerContainer()
         SignUpDI.registerContainer()
         AdapterDI.registerContainer()

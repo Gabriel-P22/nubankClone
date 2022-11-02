@@ -1,5 +1,5 @@
 //
-//  LoginView.swift
+//  DecisionView.swift
 //  nubankApp
 //
 //  Created by Gabriel Paschoal on 28/10/22.
@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import SwiftUI
 
-class LoginView: UIView {
+class DecisionView: UIView {
     
     lazy var loginButton: MainButton = {
         let btn = MainButton()

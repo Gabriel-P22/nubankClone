@@ -39,10 +39,10 @@
 		486FE4DA290C8D5800215F8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4D9290C8D5800215F8F /* SceneDelegate.swift */; };
 		486FE4E1290C8D5A00215F8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 486FE4E0290C8D5A00215F8F /* Assets.xcassets */; };
 		486FE4E4290C8D5A00215F8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 486FE4E2290C8D5A00215F8F /* LaunchScreen.storyboard */; };
-		486FE4F2290C8FF100215F8F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4F1290C8FF100215F8F /* LoginViewController.swift */; };
+		486FE4F2290C8FF100215F8F /* DecisionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4F1290C8FF100215F8F /* DecisionViewViewController.swift */; };
 		486FE4F4290C90A300215F8F /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4F3290C90A300215F8F /* Preview.swift */; };
 		486FE4F6290C917600215F8F /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4F5290C917600215F8F /* AppColors.swift */; };
-		486FE4F8290C924A00215F8F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4F7290C924A00215F8F /* LoginView.swift */; };
+		486FE4F8290C924A00215F8F /* DecisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4F7290C924A00215F8F /* DecisionView.swift */; };
 		486FE4FC290C948200215F8F /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4FB290C948200215F8F /* MainButton.swift */; };
 		486FE500290CA2B000215F8F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4FF290CA2B000215F8F /* Coordinator.swift */; };
 		486FE502290CA2BB00215F8F /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE501290CA2BB00215F8F /* MainCoordinator.swift */; };
@@ -98,10 +98,10 @@
 		486FE4E0290C8D5A00215F8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		486FE4E3290C8D5A00215F8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		486FE4E5290C8D5A00215F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		486FE4F1290C8FF100215F8F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		486FE4F1290C8FF100215F8F /* DecisionViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionViewViewController.swift; sourceTree = "<group>"; };
 		486FE4F3290C90A300215F8F /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		486FE4F5290C917600215F8F /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
-		486FE4F7290C924A00215F8F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		486FE4F7290C924A00215F8F /* DecisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionView.swift; sourceTree = "<group>"; };
 		486FE4FB290C948200215F8F /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 		486FE4FF290CA2B000215F8F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		486FE501290CA2BB00215F8F /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
@@ -274,7 +274,7 @@
 			children = (
 				486FE4FA290C945900215F8F /* Components */,
 				480C1E0C2910879E003C5570 /* SignUp */,
-				486FE4F0290C8FD700215F8F /* Login */,
+				486FE4F0290C8FD700215F8F /* Decision */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -293,14 +293,14 @@
 			path = DI;
 			sourceTree = "<group>";
 		};
-		486FE4F0290C8FD700215F8F /* Login */ = {
+		486FE4F0290C8FD700215F8F /* Decision */ = {
 			isa = PBXGroup;
 			children = (
-				486FE4F1290C8FF100215F8F /* LoginViewController.swift */,
-				486FE4F7290C924A00215F8F /* LoginView.swift */,
+				486FE4F1290C8FF100215F8F /* DecisionViewViewController.swift */,
+				486FE4F7290C924A00215F8F /* DecisionView.swift */,
 				486FE505290CAA9E00215F8F /* LoginViewModel.swift */,
 			);
-			path = Login;
+			path = Decision;
 			sourceTree = "<group>";
 		};
 		486FE4F9290C939700215F8F /* Assets */ = {
@@ -514,10 +514,10 @@
 				48E8D27F2911C9A400EF9283 /* AuthDI.swift in Sources */,
 				48E8D2942911EB6000EF9283 /* FirebaseAdapterUseCase.swift in Sources */,
 				480C1E472910C8D1003C5570 /* UserModelBuilder.swift in Sources */,
-				486FE4F8290C924A00215F8F /* LoginView.swift in Sources */,
+				486FE4F8290C924A00215F8F /* DecisionView.swift in Sources */,
 				480C1E3B2910B405003C5570 /* Auth.swift in Sources */,
 				486FE506290CAA9E00215F8F /* LoginViewModel.swift in Sources */,
-				486FE4F2290C8FF100215F8F /* LoginViewController.swift in Sources */,
+				486FE4F2290C8FF100215F8F /* DecisionViewViewController.swift in Sources */,
 				480C1E1429108AC3003C5570 /* BaseViewController.swift in Sources */,
 				48E8D27D2911A1B600EF9283 /* LoginDI.swift in Sources */,
 				486FE4D8290C8D5800215F8F /* AppDelegate.swift in Sources */,

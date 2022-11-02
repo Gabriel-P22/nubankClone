@@ -1,5 +1,5 @@
 //
-//  LoginViewModel.swift
+//  DecisionViewModel.swift
 //  nubankApp
 //
 //  Created by Gabriel Paschoal on 28/10/22.
@@ -7,11 +7,11 @@
 
 import Foundation
 
-protocol LoginViewModelProtocol {
+protocol DecisionViewModelProtocol {
     
 }
 
-class LoginViewModel: LoginViewModelProtocol {
+class DecisionViewModel: DecisionViewModelProtocol {
     
     init() {
         
