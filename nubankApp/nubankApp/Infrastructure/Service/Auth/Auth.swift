@@ -10,7 +10,7 @@ import Firebase
 
 protocol OAuthProtocol {
     func createUser(email: String, password: String, completion: @escaping (UserModelProtocol?, String?) -> Void)
-    func sendUser(name: String?)
+    func getToken() -> String?
 }
 
 class OAuth: OAuthProtocol {
@@ -35,16 +35,7 @@ class OAuth: OAuthProtocol {
         }
     }
     
-    func sendUser(name: String?) {
-        let value = [
-            "name": name
-        ]
-        
-        _ = Firestore.firestore()
-            .collection("users")
-            .document(auth?.currentUser?.uid ?? "Error")
-            .setData(value)
-        
-        self.userModel?.withName(name: name)
+    func getToken() -> String? {
+        return auth?.currentUser?.uid ?? "Error"
     }
 }

@@ -21,10 +21,15 @@ class SignUpViewModel: SignUpViewModelProtocol {
     let passwordField: Questions = Questions()
     let nameField: Questions = Questions()
     
-    var useCase: AuthUseCaseProtocol?
+    var oauthUseCase: AuthUseCaseProtocol?
+    var firebaseUseCase: FirebaseAdapterUseCaseProtocol?
     
-    init(useCase: AuthUseCaseProtocol?) {
-        self.useCase = useCase
+    init(
+        oauthUseCase: AuthUseCaseProtocol?,
+        firebaseUseCase: FirebaseAdapterUseCaseProtocol?
+    ) {
+        self.oauthUseCase = oauthUseCase
+        self.firebaseUseCase = firebaseUseCase
     }
     
     func setUpComponents() {
@@ -49,8 +54,8 @@ class SignUpViewModel: SignUpViewModelProtocol {
     
     func createUser(completion: @escaping (UserModelProtocol?, String?) -> Void) {
         if let email = emailField.questionField.text, let password = passwordField.questionField.text, let name = nameField.questionField.text {
-            useCase?.createUser(email: email, password: password, completion: completion)
-            useCase?.sendUser(name: name)
+            oauthUseCase?.createUser(email: email, password: password, completion: completion)
+            firebaseUseCase?.sendUser(name: name)
         }
     }
 }

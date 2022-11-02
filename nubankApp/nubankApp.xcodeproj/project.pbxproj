@@ -57,6 +57,9 @@
 		48E8D2882911CDE300EF9283 /* SignUpSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8D2872911CDE300EF9283 /* SignUpSuccessView.swift */; };
 		48E8D28A2911CDEB00EF9283 /* SignUpSuccessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8D2892911CDEB00EF9283 /* SignUpSuccessViewModel.swift */; };
 		48E8D28C2911CDF500EF9283 /* SignUpSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8D28B2911CDF500EF9283 /* SignUpSuccessViewController.swift */; };
+		48E8D28F2911E7A900EF9283 /* FirebaseAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8D28E2911E7A900EF9283 /* FirebaseAdapter.swift */; };
+		48E8D2912911EA5300EF9283 /* FirebaseAdapterDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8D2902911EA5300EF9283 /* FirebaseAdapterDI.swift */; };
+		48E8D2942911EB6000EF9283 /* FirebaseAdapterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8D2932911EB6000EF9283 /* FirebaseAdapterUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +116,9 @@
 		48E8D2872911CDE300EF9283 /* SignUpSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSuccessView.swift; sourceTree = "<group>"; };
 		48E8D2892911CDEB00EF9283 /* SignUpSuccessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSuccessViewModel.swift; sourceTree = "<group>"; };
 		48E8D28B2911CDF500EF9283 /* SignUpSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSuccessViewController.swift; sourceTree = "<group>"; };
+		48E8D28E2911E7A900EF9283 /* FirebaseAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAdapter.swift; sourceTree = "<group>"; };
+		48E8D2902911EA5300EF9283 /* FirebaseAdapterDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAdapterDI.swift; sourceTree = "<group>"; };
+		48E8D2932911EB6000EF9283 /* FirebaseAdapterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAdapterUseCase.swift; sourceTree = "<group>"; };
 		78C5BA58C1E1F61DC9CA0AA8 /* Pods-nubankApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nubankApp.release.xcconfig"; path = "Target Support Files/Pods-nubankApp/Pods-nubankApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -195,6 +201,8 @@
 		480C1E412910BEAA003C5570 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				48E8D28D2911E76A00EF9283 /* Network */,
+				48E8D2922911EB3D00EF9283 /* FirebaseRegister */,
 				480C1E392910B3DE003C5570 /* Auth */,
 				480C1E3E2910BB66003C5570 /* User */,
 			);
@@ -280,6 +288,7 @@
 				48E8D2802911CB5E00EF9283 /* UserDI.swift */,
 				48E8D2822911CBA300EF9283 /* SignUpDI.swift */,
 				48E8D2842911CBCA00EF9283 /* AdapterDI.swift */,
+				48E8D2902911EA5300EF9283 /* FirebaseAdapterDI.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -345,6 +354,22 @@
 				48E8D2892911CDEB00EF9283 /* SignUpSuccessViewModel.swift */,
 			);
 			path = SignUpSuccess;
+			sourceTree = "<group>";
+		};
+		48E8D28D2911E76A00EF9283 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				48E8D28E2911E7A900EF9283 /* FirebaseAdapter.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		48E8D2922911EB3D00EF9283 /* FirebaseRegister */ = {
+			isa = PBXGroup;
+			children = (
+				48E8D2932911EB6000EF9283 /* FirebaseAdapterUseCase.swift */,
+			);
+			path = FirebaseRegister;
 			sourceTree = "<group>";
 		};
 		A2F459B7754BABAB362706A4 /* Pods */ = {
@@ -480,12 +505,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				480C1E452910C85A003C5570 /* UserModelProtocol.swift in Sources */,
+				48E8D2912911EA5300EF9283 /* FirebaseAdapterDI.swift in Sources */,
 				486FE500290CA2B000215F8F /* Coordinator.swift in Sources */,
 				480C1E102910880C003C5570 /* SignUpViewModel.swift in Sources */,
 				480C1E1F291096B3003C5570 /* CustomCell.swift in Sources */,
 				480C1E382910A3A7003C5570 /* ButtonStack.swift in Sources */,
 				480C1E432910BF9B003C5570 /* AuthUseCase.swift in Sources */,
 				48E8D27F2911C9A400EF9283 /* AuthDI.swift in Sources */,
+				48E8D2942911EB6000EF9283 /* FirebaseAdapterUseCase.swift in Sources */,
 				480C1E472910C8D1003C5570 /* UserModelBuilder.swift in Sources */,
 				486FE4F8290C924A00215F8F /* LoginView.swift in Sources */,
 				480C1E3B2910B405003C5570 /* Auth.swift in Sources */,
@@ -505,6 +532,7 @@
 				486FE4F6290C917600215F8F /* AppColors.swift in Sources */,
 				480C1E21291098D0003C5570 /* CustomTextField.swift in Sources */,
 				486FE504290CAA0F00215F8F /* AppContainer.swift in Sources */,
+				48E8D28F2911E7A900EF9283 /* FirebaseAdapter.swift in Sources */,
 				48E8D27B29119F8300EF9283 /* SignUpCellAdapter.swift in Sources */,
 				480C1E402910BB72003C5570 /* UserModel.swift in Sources */,
 				480C1E3429109C09003C5570 /* AppFonts.swift in Sources */,

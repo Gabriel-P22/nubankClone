@@ -10,11 +10,12 @@ import Swinject
 
 class AppContainer {
     public static func registerContainer() {
-        LoginDI.registerContainer()
         AuthDI.registerContainer()
+        LoginDI.registerContainer()
         UserDI.registerContainer()
         SignUpDI.registerContainer()
         AdapterDI.registerContainer()
+        FirebaseAdapterDI.registerContainer()
     }
     
     public static func getContainer() -> Container? {
