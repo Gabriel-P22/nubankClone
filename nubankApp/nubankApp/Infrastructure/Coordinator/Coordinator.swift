@@ -15,9 +15,12 @@ class MainCoordinator: Coordinator {
         switch type {
         case .signUp:
             goToSignUp()
-        
+            
         case .signUpSuccess:
             goToSignUpSuccess()
+            
+        case .login:
+            goToLogin()
         }
     }
     
@@ -36,6 +39,13 @@ class MainCoordinator: Coordinator {
     
     private func goToSignUpSuccess() {
         var vc: UIViewController & Coordinating = SignUpSuccessViewController(viewModel: AppContainer.getContainer()?.resolve(SignUpSuccessViewModelProtocol.self))
+        vc.coordinator = self
+        navigationControler?.navigationItem.hidesBackButton = true
+        navigationControler?.pushViewController(vc, animated: true)
+    }
+    
+    private func  goToLogin() {
+        var vc: UIViewController & Coordinating = LoginViewController(viewModel: AppContainer.getContainer()?.resolve(LoginViewModelProtocol.self))
         vc.coordinator = self
         navigationControler?.navigationItem.hidesBackButton = true
         navigationControler?.pushViewController(vc, animated: true)

@@ -16,6 +16,7 @@ class AppContainer {
         SignUpDI.registerContainer()
         AdapterDI.registerContainer()
         FirebaseAdapterDI.registerContainer()
+        LoginDI.registerContainer()
     }
     
     public static func getContainer() -> Container? {

@@ -24,10 +24,16 @@ class DecisionViewController: BaseViewController {
     override func viewDidLoad() {
         view = customView
         customView.makeConfig()
-        customView.register.addTarget(self, action: #selector(signUp), for: .touchUpInside)
+        customView.registerButton.addTarget(self, action: #selector(goToSignUp), for: .touchUpInside)
+        customView.loginButton.addTarget(self, action: #selector(goToLogin), for: .touchUpInside)
     }
     
-    @objc func signUp() {
+    @objc func goToLogin() {
+        super.navigationController?.navigationItem.hidesBackButton = true
+        super.coordinator?.eventCurrend(with: .login)
+    }
+    
+    @objc func goToSignUp() {
         super.navigationController?.navigationItem.hidesBackButton = true
         super.coordinator?.eventCurrend(with: .signUp)
     }

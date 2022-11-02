@@ -47,9 +47,9 @@
 		486FE500290CA2B000215F8F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE4FF290CA2B000215F8F /* Coordinator.swift */; };
 		486FE502290CA2BB00215F8F /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE501290CA2BB00215F8F /* MainCoordinator.swift */; };
 		486FE504290CAA0F00215F8F /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE503290CAA0F00215F8F /* AppContainer.swift */; };
-		486FE506290CAA9E00215F8F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE505290CAA9E00215F8F /* LoginViewModel.swift */; };
+		486FE506290CAA9E00215F8F /* DecisionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FE505290CAA9E00215F8F /* DecisionViewModel.swift */; };
 		48E8D27B29119F8300EF9283 /* SignUpCellAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8D27A29119F8300EF9283 /* SignUpCellAdapter.swift */; };
-		48E8D27D2911A1B600EF9283 /* LoginDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8D27C2911A1B600EF9283 /* LoginDI.swift */; };
+		48E8D27D2911A1B600EF9283 /* DecisionDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8D27C2911A1B600EF9283 /* DecisionDI.swift */; };
 		48E8D27F2911C9A400EF9283 /* AuthDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8D27E2911C9A400EF9283 /* AuthDI.swift */; };
 		48E8D2812911CB5E00EF9283 /* UserDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8D2802911CB5E00EF9283 /* UserDI.swift */; };
 		48E8D2832911CBA300EF9283 /* SignUpDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8D2822911CBA300EF9283 /* SignUpDI.swift */; };
@@ -61,8 +61,9 @@
 		48E8D2912911EA5300EF9283 /* FirebaseAdapterDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8D2902911EA5300EF9283 /* FirebaseAdapterDI.swift */; };
 		48E8D2942911EB6000EF9283 /* FirebaseAdapterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8D2932911EB6000EF9283 /* FirebaseAdapterUseCase.swift */; };
 		48E8D2972911F5AE00EF9283 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8D2962911F5AE00EF9283 /* LoginViewController.swift */; };
-		48E8D2992911F5CC00EF9283 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8D2982911F5CC00EF9283 /* LoginViewModel.swift */; };
 		48E8D29B2911F60600EF9283 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8D29A2911F60600EF9283 /* LoginView.swift */; };
+		48E8D29D2911F98A00EF9283 /* LoginDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8D29C2911F98A00EF9283 /* LoginDI.swift */; };
+		48E8D29F2911FB8400EF9283 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8D29E2911FB8400EF9283 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,9 +110,9 @@
 		486FE4FF290CA2B000215F8F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		486FE501290CA2BB00215F8F /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		486FE503290CAA0F00215F8F /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
-		486FE505290CAA9E00215F8F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		486FE505290CAA9E00215F8F /* DecisionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionViewModel.swift; sourceTree = "<group>"; };
 		48E8D27A29119F8300EF9283 /* SignUpCellAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCellAdapter.swift; sourceTree = "<group>"; };
-		48E8D27C2911A1B600EF9283 /* LoginDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDI.swift; sourceTree = "<group>"; };
+		48E8D27C2911A1B600EF9283 /* DecisionDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionDI.swift; sourceTree = "<group>"; };
 		48E8D27E2911C9A400EF9283 /* AuthDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDI.swift; sourceTree = "<group>"; };
 		48E8D2802911CB5E00EF9283 /* UserDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDI.swift; sourceTree = "<group>"; };
 		48E8D2822911CBA300EF9283 /* SignUpDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDI.swift; sourceTree = "<group>"; };
@@ -123,8 +124,9 @@
 		48E8D2902911EA5300EF9283 /* FirebaseAdapterDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAdapterDI.swift; sourceTree = "<group>"; };
 		48E8D2932911EB6000EF9283 /* FirebaseAdapterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAdapterUseCase.swift; sourceTree = "<group>"; };
 		48E8D2962911F5AE00EF9283 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		48E8D2982911F5CC00EF9283 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		48E8D29A2911F60600EF9283 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		48E8D29C2911F98A00EF9283 /* LoginDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDI.swift; sourceTree = "<group>"; };
+		48E8D29E2911FB8400EF9283 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		78C5BA58C1E1F61DC9CA0AA8 /* Pods-nubankApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nubankApp.release.xcconfig"; path = "Target Support Files/Pods-nubankApp/Pods-nubankApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -290,12 +292,13 @@
 			isa = PBXGroup;
 			children = (
 				486FE503290CAA0F00215F8F /* AppContainer.swift */,
-				48E8D27C2911A1B600EF9283 /* LoginDI.swift */,
+				48E8D27C2911A1B600EF9283 /* DecisionDI.swift */,
 				48E8D27E2911C9A400EF9283 /* AuthDI.swift */,
 				48E8D2802911CB5E00EF9283 /* UserDI.swift */,
 				48E8D2822911CBA300EF9283 /* SignUpDI.swift */,
 				48E8D2842911CBCA00EF9283 /* AdapterDI.swift */,
 				48E8D2902911EA5300EF9283 /* FirebaseAdapterDI.swift */,
+				48E8D29C2911F98A00EF9283 /* LoginDI.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -305,7 +308,7 @@
 			children = (
 				486FE4F1290C8FF100215F8F /* DecisionViewViewController.swift */,
 				486FE4F7290C924A00215F8F /* DecisionView.swift */,
-				486FE505290CAA9E00215F8F /* LoginViewModel.swift */,
+				486FE505290CAA9E00215F8F /* DecisionViewModel.swift */,
 			);
 			path = Decision;
 			sourceTree = "<group>";
@@ -383,8 +386,8 @@
 			isa = PBXGroup;
 			children = (
 				48E8D2962911F5AE00EF9283 /* LoginViewController.swift */,
-				48E8D2982911F5CC00EF9283 /* LoginViewModel.swift */,
 				48E8D29A2911F60600EF9283 /* LoginView.swift */,
+				48E8D29E2911FB8400EF9283 /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -529,16 +532,17 @@
 				480C1E1F291096B3003C5570 /* CustomCell.swift in Sources */,
 				480C1E382910A3A7003C5570 /* ButtonStack.swift in Sources */,
 				480C1E432910BF9B003C5570 /* AuthUseCase.swift in Sources */,
-				48E8D2992911F5CC00EF9283 /* LoginViewModel.swift in Sources */,
+				48E8D29F2911FB8400EF9283 /* LoginViewModel.swift in Sources */,
 				48E8D27F2911C9A400EF9283 /* AuthDI.swift in Sources */,
+				48E8D29D2911F98A00EF9283 /* LoginDI.swift in Sources */,
 				48E8D2942911EB6000EF9283 /* FirebaseAdapterUseCase.swift in Sources */,
 				480C1E472910C8D1003C5570 /* UserModelBuilder.swift in Sources */,
 				486FE4F8290C924A00215F8F /* DecisionView.swift in Sources */,
 				480C1E3B2910B405003C5570 /* Auth.swift in Sources */,
-				486FE506290CAA9E00215F8F /* LoginViewModel.swift in Sources */,
+				486FE506290CAA9E00215F8F /* DecisionViewModel.swift in Sources */,
 				486FE4F2290C8FF100215F8F /* DecisionViewViewController.swift in Sources */,
 				480C1E1429108AC3003C5570 /* BaseViewController.swift in Sources */,
-				48E8D27D2911A1B600EF9283 /* LoginDI.swift in Sources */,
+				48E8D27D2911A1B600EF9283 /* DecisionDI.swift in Sources */,
 				486FE4D8290C8D5800215F8F /* AppDelegate.swift in Sources */,
 				486FE4FC290C948200215F8F /* MainButton.swift in Sources */,
 				48E8D2852911CBCA00EF9283 /* AdapterDI.swift in Sources */,

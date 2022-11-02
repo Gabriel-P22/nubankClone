@@ -18,7 +18,7 @@ class DecisionView: UIView {
         return btn
     }()
     
-    lazy var register: MainButton = {
+    lazy var registerButton: MainButton = {
         let btn = MainButton()
         btn.configButton(backgroundColor: AppColors.instanciate.transparent)
         btn.configTitle(title: "Entrar na minha conta", titleColor: .white)
@@ -35,7 +35,7 @@ class DecisionView: UIView {
     
     func makeConfig() {
         addSubview(logo)
-        addSubview(register)
+        addSubview(registerButton)
         addSubview(loginButton)
         makeContraints()
     }
@@ -43,14 +43,14 @@ class DecisionView: UIView {
     func makeContraints() {
         
         NSLayoutConstraint.activate([
-            register.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
-            register.centerXAnchor.constraint(equalTo: centerXAnchor),
-            register.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor),
-            register.heightAnchor.constraint(equalToConstant: 50),
+            registerButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+            registerButton.centerXAnchor.constraint(equalTo: centerXAnchor),
+            registerButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor),
+            registerButton.heightAnchor.constraint(equalToConstant: 50),
             
             loginButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
             loginButton.centerXAnchor.constraint(equalTo: centerXAnchor),
-            loginButton.bottomAnchor.constraint(equalTo: register.topAnchor, constant: -10),
+            loginButton.bottomAnchor.constraint(equalTo: registerButton.topAnchor, constant: -10),
             loginButton.heightAnchor.constraint(equalToConstant: 50),
             
             logo.centerXAnchor.constraint(equalTo: centerXAnchor),
