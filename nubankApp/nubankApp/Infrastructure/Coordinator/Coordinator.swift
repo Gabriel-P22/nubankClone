@@ -40,5 +40,4 @@ class MainCoordinator: Coordinator {
         navigationControler?.navigationItem.hidesBackButton = true
         navigationControler?.pushViewController(vc, animated: true)
     }
-    
 }
