@@ -12,7 +12,8 @@ class SignUpDI {
     public static func registerContainer() {
         AppContainer.getContainer()?.register(SignUpViewModelProtocol.self) { _ in SignUpViewModel(
             oauthUseCase: AppContainer.getContainer()?.resolve(AuthUseCaseProtocol.self),
-            firebaseUseCase: AppContainer.getContainer()?.resolve(FirebaseAdapterUseCaseProtocol.self))
+            firebaseUseCase: AppContainer.getContainer()?.resolve(FirebaseAdapterUseCaseProtocol.self),
+            userModel: AppContainer.getContainer()?.resolve(UserModelProtocol.self))
         }
         
         AppContainer.getContainer()?.register(SignUpSuccessViewModelProtocol.self, factory: { _ in

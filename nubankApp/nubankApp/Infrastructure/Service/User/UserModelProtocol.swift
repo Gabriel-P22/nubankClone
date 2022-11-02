@@ -10,5 +10,9 @@ protocol UserModelProtocol {
     
     func withEmail(email: String?) -> UserModelProtocol
     func withName(name: String?) -> UserModelProtocol
+    func withIdade(idade: String?) -> UserModelProtocol
+    func withNascimento(nascimento: String?) -> UserModelProtocol
+    func withSexo(sexo: String?) -> UserModelProtocol
+    func withTelefone(telefone: String?) -> UserModelProtocol
     func getUser() -> UserModel?
 }

@@ -16,5 +16,9 @@ protocol CustomComponentProtocol {
 public enum ComponentsType: String, CaseIterable {
     case email
     case password
+    case idade
     case name
+    case nascimento
+    case sexo
+    case telefone
 }

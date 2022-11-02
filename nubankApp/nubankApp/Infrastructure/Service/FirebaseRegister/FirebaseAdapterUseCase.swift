@@ -8,7 +8,7 @@
 import Foundation
 
 protocol FirebaseAdapterUseCaseProtocol {
-    func sendUser(name: String)
+    func sendUser(idade: String, name: String, nascimento: String, sexo: String, telefone: String)
 }
 
 class FirebaseAdapterUseCase: FirebaseAdapterUseCaseProtocol {
@@ -27,10 +27,16 @@ class FirebaseAdapterUseCase: FirebaseAdapterUseCaseProtocol {
         self.userModel = userModel
     }
     
-    func sendUser(name: String) {
+    func sendUser(idade: String, name: String, nascimento: String, sexo: String, telefone: String) {
         let collection = "users"
         let document = oauth?.getToken()
-        let headers = ["name": name]
+        let headers = [
+            "idade": idade,
+            "name": name,
+            "nascimento": nascimento,
+            "sexo": sexo,
+            "telefone": telefone
+        ]
         
         firebaseAdapter?.setCollections(collection: collection, document: document, headers: headers)
         userModel?

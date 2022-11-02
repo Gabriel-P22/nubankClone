@@ -11,4 +11,8 @@ struct UserModel {
     var name: String = ""
     var email: String = ""
     var password: String = ""
+    var idade: String = ""
+    var nascimento: String = ""
+    var sexo: String = ""
+    var telefone: String = ""
 }

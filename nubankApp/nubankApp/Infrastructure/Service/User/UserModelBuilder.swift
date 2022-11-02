@@ -20,6 +20,26 @@ class UserModelBuilder: UserModelProtocol {
         return self
     }
     
+    func withIdade(idade: String?) -> UserModelProtocol {
+        userModel.idade = idade ?? "Name"
+        return self
+    }
+    
+    func withNascimento(nascimento: String?) -> UserModelProtocol {
+        userModel.nascimento = nascimento ?? "Name"
+        return self
+    }
+    
+    func withSexo(sexo: String?) -> UserModelProtocol {
+        userModel.sexo = sexo ?? "Name"
+        return self
+    }
+    
+    func withTelefone(telefone: String?) -> UserModelProtocol {
+        userModel.telefone = telefone ?? "Name"
+        return self
+    }
+    
     func getUser() -> UserModel? {
         return userModel
     }
