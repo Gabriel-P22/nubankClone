@@ -23,4 +23,15 @@ class FirebaseAdapter: FirebaseAdapterProtocol {
             .setData(headers)
     }
     
+    func getUser() {
+        firestore
+            .document("users")
+            .addSnapshotListener { [weak self] snapshot, error in
+                guard let self = self else { return }
+                if let data = snapshot?.data(), let name = data["name"] {
+                    
+                }
+            }
+    }
+    
 }

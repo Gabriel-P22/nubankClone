@@ -10,6 +10,8 @@ import Firebase
 
 protocol OAuthProtocol {
     func createUser(email: String, password: String, completion: @escaping (UserModelProtocol?, String?) -> Void)
+    func login(email: String, password: String)
+    
     func getToken() -> String?
 }
 
@@ -37,5 +39,20 @@ class OAuth: OAuthProtocol {
     
     func getToken() -> String? {
         return auth?.currentUser?.uid ?? "Error"
+    }
+    
+    func login(email: String, password: String) {
+        auth?.signIn(withEmail: email, password: password) { user, error in
+            
+            if error != nil {
+                print("error in login")
+            } else {
+                if user == nil {
+                    print("Problem in login... Try again later")
+                } else {
+                    print("Success in login \(user?.user.uid)")
+                }
+            }
+        }
     }
 }

@@ -72,8 +72,13 @@ extension SignUpViewController: UITableViewDataSource, UITableViewDelegate {
             guard let cell = components as? Questions else { return UITableViewCell() }
             cell.render()
             return cell
-
+            
         case .password:
+            guard let cell = components as? Questions else { return UITableViewCell() }
+            cell.render()
+            return cell
+            
+        case .name:
             guard let cell = components as? Questions else { return UITableViewCell() }
             cell.render()
             return cell

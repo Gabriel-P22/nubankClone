@@ -9,6 +9,7 @@ import Foundation
 
 protocol AuthUseCaseProtocol {
     func createUser(email: String, password: String, completion: @escaping (UserModelProtocol?, String?) -> Void)
+    func login(email: String, password: String)
 }
 
 class AuthUseCase: AuthUseCaseProtocol {
@@ -20,5 +21,9 @@ class AuthUseCase: AuthUseCaseProtocol {
     
     func createUser(email: String, password: String, completion: @escaping (UserModelProtocol?, String?) -> Void) {
         oauth?.createUser(email: email, password: password, completion: completion)
+    }
+    
+    func login(email: String, password: String) {
+        oauth?.login(email: email, password: password)
     }
 }

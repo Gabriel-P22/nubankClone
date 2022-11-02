@@ -10,6 +10,7 @@ import UIKit
 
 protocol LoginViewModelProtocol {
     var listComponents: [CustomComponentProtocol] { get set }
+    func login()
     
     func setUpComponents()
 }
@@ -21,8 +22,10 @@ class LoginViewModel: LoginViewModelProtocol {
     let emailField: Questions = Questions()
     let passwordField: Questions = Questions()
     
-    init() {
-        
+    var oauthUseCase: AuthUseCaseProtocol?
+    
+    init(oauthUseCase: AuthUseCaseProtocol?) {
+        self.oauthUseCase = oauthUseCase
     }
     
     func setUpComponents() {
@@ -39,5 +42,11 @@ class LoginViewModel: LoginViewModelProtocol {
     
     func getComponent() -> [CustomComponentProtocol] {
         return listComponents
+    }
+    
+    func login() {
+        if let email = emailField.questionField.text, let password = passwordField.questionField.text {
+            oauthUseCase?.login(email: email, password: password)
+        }
     }
 }

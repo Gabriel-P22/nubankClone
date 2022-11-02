@@ -10,6 +10,7 @@ import Swinject
 
 class LoginDI {
     public static func registerContainer() {
-        AppContainer.getContainer()?.register(LoginViewModelProtocol.self) { _ in LoginViewModel() }
+        AppContainer.getContainer()?.register(LoginViewModelProtocol.self) { _ in LoginViewModel(
+            oauthUseCase: AppContainer.getContainer()?.resolve(AuthUseCaseProtocol.self)) }
     }
 }
